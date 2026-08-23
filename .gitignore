@@ -1,0 +1,21 @@
+# Python & Virtual Environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# dbt Artifacts
+target/
+dbt_packages/
+dbt_modules/
+logs/
+
+# DuckDB Database Files
+*.duckdb
+*.duckdb.wal
+
+# OS & Editor Files
+.DS_Store
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
