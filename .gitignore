@@ -1,8 +1,16 @@
-# Python & Virtual Environments
+# Python & uv Virtual Environments
 .venv/
 venv/
+ENV/
+env/
 __pycache__/
 *.py[cod]
+
+# uv Distribution & Build Artifacts
+.uv/
+build/
+dist/
+*.egg-info/
 
 # dbt Artifacts
 target/
