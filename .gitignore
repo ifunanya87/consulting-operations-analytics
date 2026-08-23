@@ -27,3 +27,10 @@ logs/
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+
+# Ignore all .json files globally
+*.json
+
+# Un-ignore everything inside the .devcontainer folder
+!.devcontainer/
+!.devcontainer/*.json

@@ -1,0 +1,22 @@
+{
+  "name": "dbt DuckDB & uv Environment",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
+      },
+      "extensions": [
+        "binnacle.vscode-dbt-power-user",   // dbt support & DAG visualizer
+        "alex-monahan.vscode-duckdb",       // DuckDB GUI visualizer
+        "charliermarsh.ruff"               // Python linter/formatter
+      ]
+    }
+  },
+
+  "postCreateCommand": "uv sync"
+}

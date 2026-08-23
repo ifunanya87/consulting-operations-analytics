@@ -1,0 +1,20 @@
+[project]
+name = "consulting-operations-analytics"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ifunanya87", email = "145222695+ifunanya87@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "dbt-duckdb>=1.11.0",
+    "duckdb>=1.5.5",
+]
+
+[project.scripts]
+consulting-operations-analytics = "consulting_operations_analytics:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
