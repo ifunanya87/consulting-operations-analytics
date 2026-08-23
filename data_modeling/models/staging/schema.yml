@@ -1,0 +1,340 @@
+version: 2
+
+models:
+  - name: stg_clients
+    description: "Staging model for client demographic and status data."
+    columns:
+      - name: Client_ID
+        description: "Unique client identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Client_Name
+        description: "Client organization name."
+      - name: Industry
+        description: "Client's industry sector."
+      - name: City
+        description: "Canadian city."
+      - name: Province
+        description: "Canadian province code. Standardized using ProvinceMap if raw values differ."
+      - name: Region
+        description: "Canadian business region used for reporting."
+      - name: Client_Size
+        description: "Client size category: Small, Mid-Market, Enterprise."
+      - name: Account_Manager_ID
+        description: "Consultant responsible for the client relationship."
+      - name: Client_Start_Date
+        description: "Date the client relationship began."
+      - name: Active_Status
+        description: "Current client active/inactive status."
+
+  - name: stg_clientcontractterms
+    description: "Staging model for client payment terms and discount rules."
+    columns:
+      - name: Client_ID
+        description: "Unique client identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Payment_Terms_Days
+        description: "Number of days after invoice date that payment is due."
+      - name: Preferred_Invoice_Frequency
+        description: "Typical billing frequency agreed with client."
+      - name: Client_Priority
+        description: "Client segment assigned by account team."
+      - name: Default_Currency
+        description: "Currency used for commercial records."
+
+  - name: stg_consultants
+    description: "Staging model for consultant profiles and rates."
+    columns:
+      - name: Consultant_ID
+        description: "Unique consultant identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Consultant_Name
+        description: "Consultant full name."
+      - name: Home_Branch_ID
+        description: "Consultant's home office branch."
+      - name: Service_Line_ID
+        description: "Unique service line identifier."
+      - name: Seniority
+        description: "Consultant seniority level."
+      - name: Hourly_Cost_Rate
+        description: "Internal hourly delivery cost in CAD."
+      - name: Standard_Bill_Rate
+        description: "Default client billing rate in CAD."
+      - name: Hire_Date
+        description: "Consultant hire date."
+      - name: Termination_Date
+        description: "Termination date if inactive; blank if active."
+      - name: Employment_Status
+        description: "Active or inactive employment status."
+
+  - name: stg_clientfeedback
+    description: "Staging model for project satisfaction scores."
+    columns:
+      - name: Feedback_ID
+        description: "Unique feedback record identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Project_ID
+        description: "Unique project identifier."
+      - name: Feedback_Date
+        description: "Date client feedback was received."
+      - name: Delivery_Quality_Score
+        description: "Client score from 1 to 5 for delivery quality."
+      - name: Communication_Score
+        description: "Client score from 1 to 5 for communication."
+      - name: Value_For_Money_Score
+        description: "Client score from 1 to 5 for value."
+      - name: Overall_Satisfaction_Score
+        description: "Overall average satisfaction score."
+      - name: Would_Recommend
+        description: "Client recommendation response."
+
+  - name: stg_projects
+    description: "Staging model for consulting project details and budgets."
+    columns:
+      - name: Project_ID
+        description: "Unique project identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Client_ID
+        description: "Unique client identifier."
+      - name: Service_Line_ID
+        description: "Unique service line identifier."
+      - name: Branch_ID
+        description: "Unique ExpertEdge branch identifier."
+      - name: Project_Manager_ID
+        description: "Consultant managing project delivery."
+      - name: Project_Name
+        description: "Project title."
+      - name: Project_Type
+        description: "Commercial engagement type."
+      - name: Start_Date
+        description: "Project start date."
+      - name: Planned_End_Date
+        description: "Expected project completion date."
+      - name: Actual_End_Date
+        description: "Actual completion date; present only for completed projects."
+      - name: Cancellation_Date
+        description: "Date project was cancelled; present only for cancelled projects."
+      - name: Cancellation_Reason
+        description: "Reason for cancellation."
+      - name: Project_Status
+        description: "Completed, In Progress, or Cancelled. Missing raw values can be inferred from lifecycle dates."
+      - name: Contract_Value_CAD
+        description: "Signed contract value before tax."
+      - name: Budgeted_Hours
+        description: "Estimated delivery hours at project approval."
+      - name: Budgeted_Cost_CAD
+        description: "Estimated labour cost at project approval."
+      - name: Initial_Risk_Level
+        description: "Delivery risk rating at project start."
+
+  - name: stg_payments
+    description: "Staging model for invoice payment records."
+    columns:
+      - name: Payment_ID
+        description: "Unique payment identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Invoice_ID
+        description: "Unique invoice identifier."
+      - name: Payment_Date
+        description: "Date payment was received."
+      - name: Payment_Amount_CAD
+        description: "Amount paid by the client."
+      - name: Payment_Method
+        description: "Payment channel."
+      - name: Payment_Status
+        description: "Payment processing status."
+
+  - name: stg_taxrates
+    description: "Staging model for provincial tax rate mappings."
+    columns:
+      - name: Province
+        description: "Canadian province code. Standardized using ProvinceMap if raw values differ."
+        data_tests:
+          - unique
+          - not_null
+      - name: Province_Name
+        description: "Province Name field."
+      - name: Tax_Name
+        description: "Tax Name field."
+      - name: Tax_Rate
+        description: "Province-level tax rate."
+
+  - name: stg_invoices
+    description: "Staging model for billing invoices, calculated taxes, and payment status."
+    columns:
+      - name: Invoice_ID
+        description: "Unique invoice identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Project_ID
+        description: "Unique project identifier."
+      - name: Client_ID
+        description: "Unique client identifier."
+      - name: Invoice_Date
+        description: "Date invoice was issued."
+      - name: Due_Date
+        description: "Payment due date."
+      - name: Invoice_Subtotal_CAD
+        description: "Invoice amount before tax."
+      - name: Tax_Rate
+        description: "Province-level tax rate."
+      - name: Tax_Amount_CAD
+        description: "Tax amount charged on the invoice."
+      - name: Total_Invoice_Amount_CAD
+        description: "Invoice subtotal plus tax."
+      - name: Invoice_Status
+        description: "Payment status of invoice as of 2025-12-31."
+
+  - name: stg_taskcategoryrules
+    description: "Staging lookup table for task categories and default billable rules."
+    columns:
+      - name: Task_Category
+        description: "Type of work recorded on the timesheet."
+        data_tests:
+          - unique
+          - not_null
+      - name: Default_Billable_Flag
+        description: "Default Billable Flag field."
+      - name: Include_In_Utilization
+        description: "Include In Utilization field."
+
+  - name: stg_timesheets
+    description: "Staging model for recorded consultant work hours."
+    columns:
+      - name: Timesheet_ID
+        description: "Unique timesheet entry identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Work_Date
+        description: "Timesheet period start date."
+      - name: Project_ID
+        description: "Unique project identifier."
+      - name: Consultant_ID
+        description: "Unique consultant identifier."
+      - name: Task_Category
+        description: "Type of work recorded on the timesheet."
+      - name: Hours_Worked
+        description: "Hours recorded for the period."
+      - name: Billable_Flag
+        description: "Billable or Non-Billable classification."
+      - name: Approved_Flag
+        description: "Whether the timesheet entry was approved."
+
+  - name: stg_servicelines
+    description: "Staging model for service practice areas and target margins."
+    columns:
+      - name: Service_Line_ID
+        description: "Unique service line identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Service_Line
+        description: "Service Line field."
+      - name: Department
+        description: "Department field."
+      - name: Target_Margin_Pct
+        description: "Target Margin Pct field."
+      - name: Standard_Bill_Rate
+        description: "Default client billing rate in CAD."
+      - name: Target_Utilization_Pct
+        description: "Target Utilization Pct field."
+
+  - name: stg_seniorityraterules
+    description: "Staging lookup table for default rates by seniority level."
+    columns:
+      - name: Service_Line_ID
+        description: "Unique service line identifier."
+        data_tests:
+          - not_null
+      - name: Seniority
+        description: "Consultant seniority level."
+        data_tests:
+          - not_null
+      - name: Default_Hourly_Cost_Rate
+        description: "Default Hourly Cost Rate field."
+      - name: Default_Bill_Rate
+        description: "Default Bill Rate field."
+
+  - name: stg_senioritylevels
+    description: "Staging lookup table for seniority multipliers and expected capacity."
+    columns:
+      - name: Seniority
+        description: "Consultant seniority level."
+        data_tests:
+          - unique
+          - not_null
+      - name: Cost_Multiplier
+        description: "Cost Multiplier field."
+      - name: Bill_Rate_Multiplier
+        description: "Bill Rate Multiplier field."
+      - name: Expected_Annual_Available_Hours
+        description: "Expected Annual Available Hours field."
+
+  - name: stg_provincemap
+    description: "Staging lookup model mapping raw province variations to standard codes."
+    columns:
+      - name: Raw_Province_Value
+        description: "Raw Province Value field."
+        data_tests:
+          - unique
+          - not_null
+      - name: Standard_Province
+        description: "Standard Province field."
+
+  - name: stg_projectassignments
+    description: "Staging model linking consultants to specific project engagements."
+    columns:
+      - name: Assignment_ID
+        description: "Unique project assignment identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Project_ID
+        description: "Unique project identifier."
+      - name: Consultant_ID
+        description: "Unique consultant identifier."
+      - name: Role_On_Project
+        description: "Role assigned to the consultant on a project."
+      - name: Assigned_Start_Date
+        description: "Start date of consultant assignment."
+      - name: Assigned_End_Date
+        description: "End date of consultant assignment."
+      - name: Allocation_Pct
+        description: "Planned allocation percentage."
+      - name: Bill_Rate_CAD
+        description: "Bill rate used for this assignment."
+      - name: Assignment_Status
+        description: "Active or closed assignment."
+
+  - name: stg_locations
+    description: "Staging model for office branch locations and regions."
+    columns:
+      - name: Branch_ID
+        description: "Unique ExpertEdge branch identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: City
+        description: "Canadian city."
+      - name: Province
+        description: "Canadian province code. Standardized using ProvinceMap if raw values differ."
+      - name: Region
+        description: "Canadian business region used for reporting."
+      - name: Office_Open_Date
+        description: "Office Open Date field."
+      - name: Branch_Manager
+        description: "Branch Manager field."
+        

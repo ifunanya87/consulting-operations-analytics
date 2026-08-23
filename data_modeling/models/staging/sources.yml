@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: raw_data
+    meta:
+      external_location: "data/raw/{name}.csv"
+    tables:
+      - name: Clients
+      - name: ClientContractTerms
+      - name: Consultants
+      - name: ClientFeedback
+      - name: Projects
+      - name: Payments
+      - name: TaxRates
+      - name: Invoices
+      - name: TaskCategoryRules
+      - name: Timesheets
+      - name: ServiceLines
+      - name: SeniorityRateRules
+      - name: SeniorityLevels
+      - name: ProvinceMap
+      - name: ProjectAssignments
+      - name: Locations
