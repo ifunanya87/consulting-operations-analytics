@@ -1,0 +1,7 @@
+Province,Province_Name,Tax_Name,Tax_Rate
+ON,Ontario,HST,0.13
+BC,British Columbia,GST/PST combined,0.12
+AB,Alberta,GST,0.05
+QC,Quebec,GST/QST combined,0.14975
+NS,Nova Scotia,HST,0.15
+MB,Manitoba,GST/PST combined,0.12

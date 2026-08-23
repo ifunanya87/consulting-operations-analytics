@@ -1,0 +1,81 @@
+Consultant_ID,Consultant_Name,Home_Branch_ID,Service_Line_ID,Seniority,Hourly_Cost_Rate,Standard_Bill_Rate,Hire_Date,Termination_Date,Employment_Status
+CON-001,Claire Kelly,BR-008,SL-02,Consultant,63,171,2024-02-12,,Active
+CON-002,Elena Taylor,BR-004,SL-05,Senior Consultant,94.3,242,2022-06-27,,Active
+CON-003,Benjamin Sanchez,BR-006,SL-02,Consultant,63,171,2025-05-01,,Active
+CON-004,Natalie Long,BR-002,SL-03,Analyst,46.2,135,2024-08-18,,Active
+CON-005,Sofia Gagnon,BR-001,SL-02,Consultant,63,171,2025-03-15,,Active
+CON-006,Joshua Butler,BR-001,SL-02,Manager,101.5,256.5,2019-10-10,,Active
+CON-007,Carter Johnson,BR-002,SL-02,Analyst,49,142.5,2023-08-22,,Active
+CON-008,Noah Henderson,BR-004,SL-01,Consultant,70.2,189,2022-07-30,,Active
+CON-009,Jayden King,BR-006,SL-05,Senior Consultant,94.3,242,2022-08-11,,Active
+CON-010,Matthew Morris,BR-002,SL-04,Analyst,51.8,,2018-02-28,,Active
+CON-011,Dylan Kelly,BR-002,SL-01,Consultant,70.2,189,2023-12-13,,Active
+CON-012,Elizabeth Cooper,BR-004,SL-02,Analyst,49,142.5,2018-06-14,,Active
+CON-013,Dylan Reed,BR-003,SL-05,Analyst,57.4,165,2018-03-23,,Active
+CON-014,Abigail Perez,BR-004,SL-04,Senior Consultant,85.1,,2020-11-08,,Active
+CON-015,James Gray,BR-001,SL-04,Principal,136.9,350,2021-04-14,,Active
+CON-016,Harper Henderson,BR-001,SL-03,Consultant,59.4,162,2023-02-07,,Active
+CON-017,Anthony Lee,BR-002,SL-03,Manager,95.7,243,2018-09-13,,Active
+CON-018,Hannah MacDonald,BR-001,SL-05,Consultant,73.8,198,2021-11-15,,Active
+CON-019,Claire Anderson,BR-001,SL-02,Senior Consultant,,209,2021-02-23,,Active
+CON-020,Sebastian Phillips,BR-004,SL-02,Senior Consultant,80.5,209,2021-09-06,,Active
+CON-021,Emily Gagnon,BR-005,SL-05,Consultant,73.8,198,2019-09-09,,Active
+CON-022,Zoey Scott,BR-006,SL-04,Manager,107.3,270,2018-06-10,,Active
+CON-023,Claire James,BR-004,SL-02,Consultant,63,171,2022-03-28,,Active
+CON-024,Aurora Walker,BR-003,SL-02,Senior Consultant,80.5,209,2022-12-15,,Active
+CON-025,Maya Cooper,BR-005,SL-05,Senior Consultant,94.3,242,2023-07-25,,Active
+CON-026,Penelope Tremblay,BR-004,SL-01,Consultant,70.2,189,2020-04-09,,Active
+CON-027,Aiden Hughes,BR-003,SL-02,Manager,101.5,,2023-07-03,2025-07-02,Inactive
+CON-028,Noah Brown,BR-003,SL-01,Analyst,54.6,157.5,2019-08-25,,Active
+CON-029,Violet Stewart,BR-001,SL-01,Consultant,70.2,189,2021-01-03,,Active
+CON-030,Isabella Moore,BR-006,SL-06,Consultant,54.9,153,2023-08-22,,Active
+CON-031,Emma Peterson,BR-001,SL-02,Analyst,49,142.5,2020-09-22,,Active
+CON-032,James Jenkins,BR-003,SL-03,Principal,122.1,315,2019-10-11,,Active
+CON-033,Andrew Morgan,BR-006,SL-03,Principal,122.1,315,2023-09-15,,Active
+CON-034,Abigail Morgan,BR-001,SL-06,Senior Consultant,70.15,187,2025-04-19,,Active
+CON-035,Isabella Hall,BR-003,SL-02,Analyst,49,142.5,2025-02-17,,Active
+CON-036,John Washington,BR-001,SL-04,Principal,136.9,350,2024-10-02,,Active
+CON-037,Victoria Morris,BR-004,SL-04,Consultant,66.6,180,2019-11-13,,Active
+CON-038,Owen Green,BR-007,SL-02,Manager,101.5,256.5,2024-12-17,,Active
+CON-039,Ella Edwards,BR-001,SL-04,Analyst,51.8,150,2020-07-12,,Active
+CON-040,Lily Perry,BR-003,SL-06,Senior Consultant,70.15,187,2024-02-19,,Active
+CON-041,Emily Howard,BR-006,SL-04,Analyst,51.8,150,2020-11-23,,Active
+CON-042,Hudson Hughes,BR-004,SL-02,Consultant,63,171,2022-07-23,,Active
+CON-043,Ella Wright,BR-006,SL-04,Senior Consultant,85.1,220,2018-05-17,,Active
+CON-044,Aiden Johnson,BR-006,SL-01,Analyst,54.6,157.5,2021-08-10,,Active
+CON-045,Evelyn Reed,BR-007,SL-01,Analyst,54.6,157.5,2022-11-20,,Active
+CON-046,Levi Adams,BR-003,SL-03,Analyst,46.2,135,2023-11-13,,Active
+CON-047,Ella Butler,BR-006,SL-05,Senior Consultant,94.3,242,2021-12-14,,Active
+CON-048,Lucas Scott,BR-001,SL-02,Manager,101.5,256.5,2025-03-13,,Active
+CON-049,Samuel Long,BR-001,SL-03,Consultant,59.4,162,2024-08-14,,Active
+CON-050,Aurora Howard,BR-001,SL-03,Senior Consultant,75.9,198,2019-06-29,,Active
+CON-051,Ava Carter,BR-003,SL-02,Senior Consultant,80.5,209,2022-02-05,,Active
+CON-052,Henry Henderson,BR-001,SL-02,Analyst,49,142.5,2022-11-06,,Active
+CON-053,Anthony Evans,BR-007,SL-05,Senior Consultant,94.3,242,2021-08-19,,Active
+CON-054,Zoey Johnson,BR-007,SL-03,Consultant,59.4,162,2021-01-19,,Active
+CON-055,Matthew Patterson,BR-001,SL-06,Consultant,54.9,153,2020-02-21,,Active
+CON-056,Levi Price,BR-004,SL-05,Manager,118.9,297,2021-01-10,,Active
+CON-057,Dylan Torres,BR-004,SL-05,Manager,118.9,297,2022-07-20,,Active
+CON-058,Julian Ramirez,BR-006,SL-05,Analyst,,165,2018-04-13,,Active
+CON-059,Abigail Bennett,BR-002,SL-06,Principal,,297.5,2021-12-20,,Active
+CON-060,Matthew Perry,BR-005,SL-06,Consultant,54.9,153,2020-07-06,,Active
+CON-061,Sarah Hughes,BR-002,SL-01,Consultant,70.2,189,2023-06-07,,Active
+CON-062,John Smith,BR-007,SL-04,Senior Consultant,85.1,220,2021-01-09,,Active
+CON-063,Ava MacDonald,BR-007,SL-06,Analyst,42.7,127.5,2023-04-05,,Active
+CON-064,Elena Moore,BR-001,SL-06,Analyst,42.7,127.5,2019-07-21,,Active
+CON-065,Hannah Morgan,BR-003,SL-05,Senior Consultant,94.3,242,2025-02-07,,Active
+CON-066,Aaliyah Allen,BR-004,SL-04,Analyst,51.8,150,2024-10-29,,Active
+CON-067,Olivia Barnes,BR-003,SL-06,Senior Consultant,70.15,187,2022-04-05,,Active
+CON-068,Grayson Wright,BR-001,SL-01,Analyst,54.6,157.5,2024-11-15,,Active
+CON-069,Sebastian Adams,BR-005,SL-03,Manager,95.7,243,2018-02-27,,Active
+CON-070,Henry Green,BR-006,SL-05,Consultant,73.8,198,2019-03-16,,Active
+CON-071,Hannah Roberts,BR-001,SL-04,Consultant,66.6,180,2019-05-15,,Active
+CON-072,William Bell,BR-007,SL-02,Analyst,49,142.5,2018-08-26,,Active
+CON-073,Levi Henderson,BR-006,SL-03,Senior Consultant,75.9,198,2020-11-10,,Active
+CON-074,Hazel Anderson,BR-007,SL-04,Manager,107.3,270,2021-05-05,,Active
+CON-075,Maverick Parker,BR-006,SL-03,Principal,,315,2021-06-18,,Active
+CON-076,Daniel Cooper,BR-002,SL-02,Consultant,63,171,2022-12-02,,Active
+CON-077,John Powell,BR-006,SL-02,Manager,101.5,256.5,2024-04-03,,Active
+CON-078,Claire Lee,BR-004,SL-04,Manager,107.3,270,2021-05-02,,Active
+CON-079,Mia Long,BR-004,SL-02,Analyst,49,142.5,2021-01-08,2025-10-25,Inactive
+CON-080,Mia Jenkins,BR-005,SL-02,Analyst,,142.5,2018-08-20,,Active

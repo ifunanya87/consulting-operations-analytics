@@ -1,0 +1,96 @@
+Client_ID,Client_Name,Industry,City,Province,Region,Client_Size,Account_Manager_ID,Client_Start_Date,Active_Status
+CLT-001,Cedar Municipal Services,Logistics & Transportation,Toronto,ON,Ontario,Mid-Market,CON-056,2024-10-23,Active
+CLT-002,Evergreen Labs,Logistics & Transportation,Montreal,QC,Quebec,Small,CON-033,2020-01-05,Active
+CLT-003,Clearwater Consulting,Technology,Montreal,QC,Quebec,Small,CON-077,2016-04-21,Active
+CLT-004,Ontario Retail,Government/Public Sector,Mississauga,ON,Ontario,Mid-Market,CON-059,2019-03-26,Active
+CLT-005,Capstone Software,Retail,Vancouver,BC,Western Canada,Enterprise,CON-006,2016-11-16,Inactive
+CLT-006,Cedar Media,Government/Public Sector,Vancouver,BC,Western Canada,Mid-Market,CON-006,2023-07-08,Active
+CLT-007,Lakeside Capital,Education,Halifax,Nova Scotia,Atlantic Canada,Small,CON-036,2024-06-10,Active
+CLT-008,Highland Labs,Retail,Montreal,quebec,Quebec,Mid-Market,CON-069,2021-10-10,Active
+CLT-009,Brightpath Energy,Government/Public Sector,Edmonton,AB,Prairies,Enterprise,CON-033,2016-10-30,Active
+CLT-010,Pinecrest Telecom,Logistics & Transportation,Toronto,ON,Ontario,Mid-Market,CON-057,2018-03-04,Active
+CLT-011,Birch Education,Banking & Financial Services,Halifax,NS,Atlantic Canada,Mid-Market,CON-078,2017-01-16,Active
+CLT-012,BlueRock University,Technology,Montreal,Quebec,Quebec,Mid-Market,CON-048,2018-04-10,Active
+CLT-013,Laurentian Transit,Energy & Utilities,Victoria,British Columbia,Western Canada,Small,CON-048,2017-06-19,Active
+CLT-014,Seaway Labs,Banking & Financial Services,Calgary,Alberta,Prairies,Mid-Market,CON-036,2018-01-21,Active
+CLT-015,Ontario Group,Banking & Financial Services,Vancouver,british columbia,Western Canada,Mid-Market,CON-059,2016-12-06,Active
+CLT-016,Lakeside Works,Technology,Ottawa,ON,Ontario,Mid-Market,CON-078,2023-10-22,Active
+CLT-017,Polar University,Energy & Utilities,Montreal,QC,Quebec,Enterprise,CON-017,2019-04-14,Active
+CLT-018,Northstar Systems,Banking & Financial Services,Laval,QC,Quebec,Mid-Market,CON-032,2018-11-04,Active
+CLT-019,Ontario Education,Technology,Ottawa,Ontario,Ontario,Mid-Market,CON-078,2022-11-10,Active
+CLT-020,Cedar Education,Retail,Ottawa,ON,Ontario,Mid-Market,CON-032,2021-10-23,Active
+CLT-021,Evergreen Health,Energy & Utilities,Montreal,QC,Quebec,Mid-Market,CON-006,2021-11-29,Active
+CLT-022,Prairie Public Health,Technology,Edmonton,AB,Prairies,Mid-Market,CON-032,2019-01-28,Inactive
+CLT-023,Highland Consulting,Logistics & Transportation,Toronto,ON,Ontario,Mid-Market,CON-036,2016-08-17,Active
+CLT-024,Granite Analytics,Energy & Utilities,Winnipeg,MB,Prairies,Mid-Market,CON-017,2024-05-10,Inactive
+CLT-025,BlueRock Labs,Technology,Toronto,ON,Ontario,Enterprise,CON-022,2018-05-17,Active
+CLT-026,Northstar Retail,Retail,Calgary,AB,Prairies,Mid-Market,CON-033,2020-08-09,Active
+CLT-027,Ontario Consulting,Energy & Utilities,Toronto,ON,Ontario,Enterprise,CON-038,2016-08-11,Active
+CLT-028,Birch Health,Technology,Burnaby,BC,Western Canada,Mid-Market,CON-077,2017-02-04,Active
+CLT-029,Lakeside Supply Chain,Retail,Calgary,alberta,Prairies,Mid-Market,CON-059,2023-06-22,Active
+CLT-030,Union Manufacturing,Education,Mississauga,ON,Ontario,Enterprise,CON-069,2016-12-18,Active
+CLT-031,Birch Retail,Banking & Financial Services,Quebec City,quebec,Quebec,Enterprise,CON-032,2022-11-06,Active
+CLT-032,Ironwood University,Technology,Quebec City,QC,Quebec,Enterprise,CON-059,2020-12-09,Active
+CLT-033,Hudson Telecom,Retail,Toronto,ON,Ontario,Enterprise,CON-059,2023-10-29,Active
+CLT-034,Summit Works,Education,Quebec City,Quebec,Quebec,Mid-Market,CON-032,2018-05-09,Active
+CLT-035,Evergreen Holdings,Retail,Hamilton,ON,Ontario,Mid-Market,CON-006,2021-01-01,Active
+CLT-036,Maple Transit,Technology,Montreal,QC,Quebec,Small,CON-022,2020-02-08,Active
+CLT-037,Ontario Utilities,Technology,Calgary,Alberta,Prairies,Enterprise,CON-038,2016-08-23,Active
+CLT-038,Birch Group,Retail,Waterloo,ON,Ontario,Small,CON-048,2020-10-13,Active
+CLT-039,Laurentian Logistics,Logistics & Transportation,Edmonton,AB,Prairies,Small,CON-069,2024-10-20,Active
+CLT-040,Cedar Holdings,Logistics & Transportation,Calgary,AB,Prairies,Mid-Market,CON-022,2018-04-18,Active
+CLT-041,Seaway Energy,Banking & Financial Services,Quebec City,QC,Quebec,Enterprise,CON-069,2018-07-16,Active
+CLT-042,Hudson Transit,Healthcare,Montreal,QC,Quebec,Enterprise,CON-069,2021-08-23,Active
+CLT-043,Civic Capital,Technology,Vancouver,BC,Western Canada,Small,CON-038,2020-08-08,Active
+CLT-044,Pacific Labs,Banking & Financial Services,Hamilton,ON,Ontario,Mid-Market,CON-048,2016-06-04,Active
+CLT-045,Seaway Transit,Retail,Calgary,AB,Prairies,Small,CON-038,2017-01-26,Active
+CLT-046,Seaway Retail,Healthcare,Winnipeg,MB,Prairies,Small,CON-006,2024-08-09,Active
+CLT-047,Metro Logistics,Technology,Mississauga, ON ,Ontario,Mid-Market,CON-057,2021-07-03,Active
+CLT-048,Metro FinServ,Logistics & Transportation,Calgary,AB,Prairies,Mid-Market,CON-038,2018-08-01,Inactive
+CLT-049,Polar Energy,Energy & Utilities,Laval,QC,Quebec,Mid-Market,CON-033,2022-11-18,Active
+CLT-050,Brightpath Health,Government/Public Sector,Montreal,QC,Quebec,Enterprise,CON-038,2017-08-10,Active
+CLT-051,Silverline Supply Chain,Logistics & Transportation,Vancouver,BC,Western Canada,Enterprise,CON-078,2016-07-21,Active
+CLT-052,Highland Hospitality,Government/Public Sector,Waterloo,ON,Ontario,Mid-Market,CON-056,2019-01-21,Active
+CLT-053,Clearwater Telecom,Energy & Utilities,Toronto,ON,Ontario,Enterprise,CON-075,2023-10-17,Active
+CLT-054,Atlantic Facilities,Healthcare,Winnipeg,MB,Prairies,Mid-Market,CON-078,2016-04-24,Active
+CLT-055,Metro Education,Retail,Montreal,QC,Quebec,Mid-Market,CON-069,2019-09-30,Active
+CLT-056,Sterling Holdings,Education,Mississauga,ON,Ontario,Mid-Market,CON-015,2021-03-03,Active
+CLT-057,Greenfield Partners,Banking & Financial Services,Waterloo,ON,Ontario,Mid-Market,CON-057,2020-08-14,Active
+CLT-058,Prairie Group,Government/Public Sector,Edmonton,AB,Prairies,Enterprise,CON-017,2019-08-08,Inactive
+CLT-059,Ironwood Logistics,Technology,Toronto,ON,Ontario,Mid-Market,CON-017,2020-03-12,Active
+CLT-060,Aurora Group,Energy & Utilities,Calgary,AB,Prairies,Enterprise,CON-059,2022-08-14,Active
+CLT-061,Granite Consulting,Retail,Quebec City,QC,Quebec,Small,CON-032,2021-07-18,Inactive
+CLT-062,Capstone Construction,Technology,Vancouver,BC,Western Canada,Enterprise,CON-048,2018-11-25,Active
+CLT-063,Harbour Software,Manufacturing,Toronto,ON,Ontario,Mid-Market,CON-074,2016-05-25,Active
+CLT-064,Sterling FinServ,Government/Public Sector,Vancouver,BC,Western Canada,Small,CON-006,2018-10-19,Active
+CLT-065,Keystone Energy,Energy & Utilities,Mississauga,ON,Ontario,Small,CON-074,2022-01-19,Active
+CLT-066,Hudson Energy,Insurance,Toronto,ON,Ontario,Mid-Market,CON-074,2023-11-11,Active
+CLT-067,Highland Public Health,Logistics & Transportation,Burnaby,BC,Western Canada,Enterprise,CON-038,2021-07-15,Active
+CLT-068,TrueNorth Networks,Healthcare,Waterloo,ON,Ontario,Mid-Market,CON-038,2023-11-07,Active
+CLT-069,Pacific Public Health,Education,Halifax,NS,Atlantic Canada,Mid-Market,CON-069,2023-03-28,Active
+CLT-070,Brightpath Group,Manufacturing,Halifax,NS,Atlantic Canada,Mid-Market,CON-015,2019-10-14,Active
+CLT-071,Ontario Software,Manufacturing,Calgary,AB,Prairies,Small,CON-036,2016-11-08,Active
+CLT-072,Atlantic Systems,Education,Ottawa,ON,Ontario,Enterprise,CON-036,2021-07-19,Active
+CLT-073,Skyline Telecom,Energy & Utilities,Toronto,ON,Ontario,Mid-Market,CON-069,2018-05-27,Active
+CLT-074,Capstone Holdings,Technology,Hamilton,ON,Ontario,Mid-Market,CON-038,2023-04-24,Active
+CLT-075,Sterling Facilities,Banking & Financial Services,Mississauga,ON,Ontario,Enterprise,CON-022,2020-12-20,Active
+CLT-076,Seaway Capital,Education,Vancouver,BC,Western Canada,Mid-Market,CON-074,2019-03-27,Active
+CLT-077,Prairie Labs,Retail,Toronto,ON,Ontario,Small,CON-017,2020-05-28,Active
+CLT-078,Boreal Foods,Manufacturing,Burnaby,BC,Western Canada,Mid-Market,CON-056,2017-05-09,Active
+CLT-079,Metro Utilities,Healthcare,Vancouver,BC,Western Canada,Small,CON-057,2017-01-23,Active
+CLT-080,Northstar Construction,Government/Public Sector,Winnipeg,MB,Prairies,Mid-Market,CON-017,2019-11-01,Active
+CLT-081,Dominion Municipal Services,Government/Public Sector,Vancouver,BC,Western Canada,Mid-Market,CON-022,2018-11-08,Active
+CLT-082,Aurora Supply Chain,Healthcare,Hamilton,ON,Ontario,Enterprise,CON-033,2017-05-11,Inactive
+CLT-083,Evergreen Partners,Technology,Toronto,ON,Ontario,Small,CON-048,2023-09-02,Active
+CLT-084,Laurentian Analytics,Energy & Utilities,Ottawa,ON,Ontario,Mid-Market,CON-075,2021-05-01,Active
+CLT-085,Riverbend Telecom,Energy & Utilities,Ottawa,ON,Ontario,Small,CON-038,2019-08-16,Active
+CLT-086,Boreal Public Health,Education,Mississauga,ON,Ontario,Small,CON-075,2017-01-06,Active
+CLT-087,Ironwood Partners,Banking & Financial Services,Ottawa,ON,Ontario,Mid-Market,CON-017,2017-06-14,Active
+CLT-088,BlueRock Supply Chain,Government/Public Sector,Victoria,BC,Western Canada,Enterprise,CON-048,2022-07-28,Active
+CLT-089,Pacific FinServ,Insurance,Halifax,nova scotia,Atlantic Canada,Small,CON-015,2024-07-26,Active
+CLT-090,TrueNorth Consulting,Technology,Montreal,QC,Quebec,Small,CON-077,2023-08-22,Inactive
+CLT-091,Seaway FinServ,Logistics & Transportation,Waterloo,ON,Ontario,Small,CON-048,2019-01-03,Inactive
+CLT-092,Lakeside Facilities,Education,Montreal,QC,Quebec,Mid-Market,CON-075,2023-04-10,Active
+CLT-093,Sterling Telecom,Energy & Utilities,Montreal,QC,Quebec,Mid-Market,CON-057,2016-06-26,Active
+CLT-094,Lakeside Media,Banking & Financial Services,Edmonton, AB ,Prairies,Small,CON-077,2021-02-18,Active
+CLT-095,Greenfield Municipal Services,Retail,Ottawa,ON,Ontario,Mid-Market,CON-077,2024-10-23,Active

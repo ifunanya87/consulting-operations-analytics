@@ -1,0 +1,6 @@
+Seniority,Cost_Multiplier,Bill_Rate_Multiplier,Expected_Annual_Available_Hours
+Analyst,0.7,0.75,1760
+Consultant,0.9,0.9,1760
+Senior Consultant,1.15,1.1,1720
+Manager,1.45,1.35,1680
+Principal,1.85,1.75,1600

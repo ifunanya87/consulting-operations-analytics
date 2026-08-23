@@ -1,0 +1,31 @@
+Service_Line_ID,Seniority,Default_Hourly_Cost_Rate,Default_Bill_Rate
+SL-01,Analyst,54.6,157.5
+SL-01,Consultant,70.2,189
+SL-01,Senior Consultant,89.7,231
+SL-01,Manager,113.1,283.5
+SL-01,Principal,144.3,367.5
+SL-02,Analyst,49,142.5
+SL-02,Consultant,63,171
+SL-02,Senior Consultant,80.5,209
+SL-02,Manager,101.5,256.5
+SL-02,Principal,129.5,332.5
+SL-03,Analyst,46.2,135
+SL-03,Consultant,59.4,162
+SL-03,Senior Consultant,75.9,198
+SL-03,Manager,95.7,243
+SL-03,Principal,122.1,315
+SL-04,Analyst,51.8,150
+SL-04,Consultant,66.6,180
+SL-04,Senior Consultant,85.1,220
+SL-04,Manager,107.3,270
+SL-04,Principal,136.9,350
+SL-05,Analyst,57.4,165
+SL-05,Consultant,73.8,198
+SL-05,Senior Consultant,94.3,242
+SL-05,Manager,118.9,297
+SL-05,Principal,151.7,385
+SL-06,Analyst,42.7,127.5
+SL-06,Consultant,54.9,153
+SL-06,Senior Consultant,70.15,187
+SL-06,Manager,88.45,229.5
+SL-06,Principal,112.85,297.5

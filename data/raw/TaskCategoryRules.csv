@@ -1,0 +1,8 @@
+Task_Category,Default_Billable_Flag,Include_In_Utilization
+Client Workshop,Billable,Yes
+Delivery,Billable,Yes
+Analysis,Billable,Yes
+QA Review,Billable,Yes
+Sales Support,Non-Billable,No
+Internal Training,Non-Billable,No
+Admin,Non-Billable,No

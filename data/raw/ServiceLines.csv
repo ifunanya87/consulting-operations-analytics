@@ -1,0 +1,7 @@
+Service_Line_ID,Service_Line,Department,Target_Margin_Pct,Standard_Bill_Rate,Target_Utilization_Pct
+SL-01,Strategy & Transformation,Advisory,0.4,210,0.75
+SL-02,Data Analytics & BI,Data,0.38,190,0.78
+SL-03,Automation & Process Improvement,Operations,0.36,180,0.76
+SL-04,Cloud & Digital Delivery,Technology,0.35,200,0.76
+SL-05,Financial Advisory,Finance,0.42,220,0.74
+SL-06,People & Change,People,0.34,170,0.72

@@ -1,0 +1,96 @@
+Client_ID,Payment_Terms_Days,Preferred_Invoice_Frequency,Client_Priority,Default_Currency
+CLT-001,45,Quarterly,Standard,CAD
+CLT-002,45,Project Close,Standard,CAD
+CLT-003,45,Project Close,Standard,CAD
+CLT-004,30,Milestone,Growth,CAD
+CLT-005,30,Quarterly,Strategic,CAD
+CLT-006,45,Quarterly,Standard,CAD
+CLT-007,45,Monthly,Standard,CAD
+CLT-008,45,Quarterly,Standard,CAD
+CLT-009,30,Monthly,Standard,CAD
+CLT-010,30,Monthly,Standard,CAD
+CLT-011,60,Monthly,Standard,CAD
+CLT-012,15,Project Close,Standard,CAD
+CLT-013,30,Milestone,Growth,CAD
+CLT-014,45,Quarterly,Standard,CAD
+CLT-015,30,Monthly,Standard,CAD
+CLT-016,30,Milestone,Growth,CAD
+CLT-017,30,Monthly,Standard,CAD
+CLT-018,30,Project Close,Standard,CAD
+CLT-019,60,Milestone,Strategic,CAD
+CLT-020,30,Project Close,Standard,CAD
+CLT-021,30,Quarterly,Strategic,CAD
+CLT-022,30,Milestone,Standard,CAD
+CLT-023,45,Milestone,Growth,CAD
+CLT-024,60,Milestone,Growth,CAD
+CLT-025,30,Milestone,Standard,CAD
+CLT-026,45,Project Close,Strategic,CAD
+CLT-027,30,Project Close,Standard,CAD
+CLT-028,45,Quarterly,Strategic,CAD
+CLT-029,30,Quarterly,Standard,CAD
+CLT-030,15,Milestone,Strategic,CAD
+CLT-031,15,Monthly,Standard,CAD
+CLT-032,45,Quarterly,Standard,CAD
+CLT-033,30,Milestone,Growth,CAD
+CLT-034,30,Milestone,Standard,CAD
+CLT-035,30,Monthly,Standard,CAD
+CLT-036,30,Project Close,Standard,CAD
+CLT-037,30,Monthly,Strategic,CAD
+CLT-038,30,Quarterly,Standard,CAD
+CLT-039,30,Milestone,Standard,CAD
+CLT-040,15,Monthly,Strategic,CAD
+CLT-041,30,Project Close,Standard,CAD
+CLT-042,30,Quarterly,Strategic,CAD
+CLT-043,30,Project Close,Standard,CAD
+CLT-044,30,Project Close,Standard,CAD
+CLT-045,45,Quarterly,Standard,CAD
+CLT-046,30,Monthly,Standard,CAD
+CLT-047,30,Quarterly,Standard,CAD
+CLT-048,45,Project Close,Standard,CAD
+CLT-049,45,Monthly,Standard,CAD
+CLT-050,30,Quarterly,Strategic,CAD
+CLT-051,45,Quarterly,Strategic,CAD
+CLT-052,45,Monthly,Standard,CAD
+CLT-053,30,Quarterly,Growth,CAD
+CLT-054,45,Milestone,Standard,CAD
+CLT-055,30,Project Close,Growth,CAD
+CLT-056,30,Milestone,Standard,CAD
+CLT-057,60,Monthly,Growth,CAD
+CLT-058,30,Milestone,Standard,CAD
+CLT-059,45,Project Close,Standard,CAD
+CLT-060,30,Milestone,Growth,CAD
+CLT-061,30,Milestone,Growth,CAD
+CLT-062,15,Monthly,Strategic,CAD
+CLT-063,15,Monthly,Growth,CAD
+CLT-064,30,Project Close,Standard,CAD
+CLT-065,45,Milestone,Standard,CAD
+CLT-066,30,Milestone,Standard,CAD
+CLT-067,30,Milestone,Strategic,CAD
+CLT-068,45,Milestone,Standard,CAD
+CLT-069,30,Monthly,Standard,CAD
+CLT-070,30,Milestone,Growth,CAD
+CLT-071,30,Milestone,Standard,CAD
+CLT-072,30,Milestone,Strategic,CAD
+CLT-073,30,Milestone,Growth,CAD
+CLT-074,60,Monthly,Standard,CAD
+CLT-075,30,Quarterly,Strategic,CAD
+CLT-076,15,Monthly,Standard,CAD
+CLT-077,45,Milestone,Strategic,CAD
+CLT-078,30,Project Close,Standard,CAD
+CLT-079,30,Monthly,Growth,CAD
+CLT-080,15,Monthly,Standard,CAD
+CLT-081,30,Project Close,Standard,CAD
+CLT-082,30,Project Close,Strategic,CAD
+CLT-083,30,Monthly,Standard,CAD
+CLT-084,30,Quarterly,Growth,CAD
+CLT-085,30,Monthly,Standard,CAD
+CLT-086,30,Project Close,Standard,CAD
+CLT-087,30,Quarterly,Growth,CAD
+CLT-088,45,Quarterly,Standard,CAD
+CLT-089,45,Monthly,Standard,CAD
+CLT-090,15,Project Close,Standard,CAD
+CLT-091,30,Project Close,Standard,CAD
+CLT-092,30,Monthly,Strategic,CAD
+CLT-093,30,Monthly,Growth,CAD
+CLT-094,45,Quarterly,Standard,CAD
+CLT-095,30,Quarterly,Standard,CAD

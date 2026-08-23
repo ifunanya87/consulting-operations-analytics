@@ -1,0 +1,261 @@
+Project_ID,Client_ID,Project_Name,Service_Line_ID,Branch_ID,Project_Manager_ID,Project_Type,Start_Date,Planned_End_Date,Actual_End_Date,Cancellation_Date,Cancellation_Reason,Project_Status,Contract_Value_CAD,Budgeted_Hours,Budgeted_Cost_CAD,Initial_Risk_Level
+PRJ-0001,CLT-005,Capstone Software Reporting Modernization,SL-02,BR-003,CON-038,Fixed Fee,2024-06-29,2024-11-19,2024-12-28,,,Completed,67110,576.3,40075.47,Low
+PRJ-0002,CLT-026,Northstar Retail Finance Transformation Roadmap,SL-02,BR-004,CON-048,Retainer,2024-05-03,2024-07-25,2024-07-29,,,Completed,106070,994.2,69139.6,Low
+PRJ-0003,CLT-072,Atlantic Systems Cloud Readiness Assessment,SL-01,BR-002,CON-056,Fixed Fee,2025-05-29,2025-07-23,,2025-06-21,Scope withdrawn,Cancelled,265140,2657.4,168124.21,High
+PRJ-0004,CLT-033,Hudson Telecom Process Automation Sprint,SL-05,BR-001,CON-057,Fixed Fee,2023-10-06,2024-05-19,2024-07-02,,,Completed,260220,1669.1,146337.9,Low
+PRJ-0005,CLT-059,Ironwood Logistics Data Quality Remediation,SL-04,BR-002,CON-022,Time & Materials,2025-07-14,2025-12-13,,,,,52170,407.2,34653.69,Medium
+PRJ-0006,CLT-033,Hudson Telecom Finance Transformation Roadmap,SL-05,BR-003,CON-057,Time & Materials,2024-12-04,2025-01-10,2025-02-18,,,Completed,148590,1018.7,89316.15,Low
+PRJ-0007,CLT-066,Hudson Energy Operating Model Review,SL-06,BR-001,CON-059,Fixed Fee,2025-01-03,2025-07-01,2025-07-30,,,Completed,128650,1359.2,86599.04,Medium
+PRJ-0008,CLT-032,Ironwood University Customer Analytics Pilot,SL-03,BR-006,CON-069,Retainer,2025-04-22,2025-07-27,2025-07-30,,,Completed,228590,1807.2,147602.61,Medium
+PRJ-0009,CLT-032,Ironwood University Reporting Modernization,SL-05,BR-007,CON-056,Fixed Fee,2024-12-22,2025-06-15,2025-07-23,,,Completed,404690,2576.2,225869.97,Low
+PRJ-0010,CLT-066,Hudson Energy Customer Analytics Pilot,SL-02,BR-002,CON-038,Fixed Fee,2023-10-27,2023-12-16,2023-12-22,,,Completed,132320,1173.3,81598.09,Medium
+PRJ-0011,CLT-022,Prairie Public Health Customer Analytics Pilot,SL-04,BR-002,CON-036,Fixed Fee,2024-12-09,2025-04-23,2025-06-12,,,Completed,195200,1461.5,124371.56,Medium
+PRJ-0012,CLT-002,Evergreen Labs Process Automation Sprint,SL-05,BR-006,CON-056,Fixed Fee,2025-04-01,2025-06-23,,2025-04-19,Client merger/restructure,Cancelled,122000,836.9,73377.11,Medium
+PRJ-0013,CLT-052,Highland Hospitality Controls & Compliance Review,SL-02,BR-001,CON-048,Fixed Fee,2025-04-05,2025-06-19,2025-06-04,,,Completed,39900,349.8,24324.5,Medium
+PRJ-0014,CLT-031,Birch Retail Finance Transformation Roadmap,SL-06,BR-006,CON-059,Time & Materials,2024-10-15,2025-03-26,2025-04-12,,,Completed,78220,807.4,51443.14,Low
+PRJ-0015,CLT-044,Pacific Labs Reporting Modernization,SL-02,BR-002,CON-048,Time & Materials,2024-10-29,2025-02-04,2025-02-09,,,,148410,1262.3,87785.59,Medium
+PRJ-0016,CLT-089,Pacific FinServ Process Automation Sprint,SL-04,BR-007,CON-015,Time & Materials,2024-09-23,2025-05-18,2025-06-01,,,Completed,129820,965.5,82162.15,High
+PRJ-0017,CLT-051,Silverline Supply Chain Reporting Modernization,SL-03,BR-003,CON-069,Time & Materials,2024-08-21,2024-09-30,,,,In Progress,153010,1126.8,92028.3,Medium
+PRJ-0018,CLT-088,BlueRock Supply Chain BI Dashboard Implementation,SL-05,BR-003,CON-056,Fixed Fee,2025-01-03,2025-08-14,2025-08-21,,,Completed,402780,2718.6,238354.43,Low
+PRJ-0019,CLT-009,Brightpath Energy Workforce Change Program,SL-05,BR-005,CON-057,Fixed Fee,2023-01-13,2023-02-23,,,,,148310,971.8,85201.87,Low
+PRJ-0020,CLT-054,Atlantic Facilities Reporting Modernization,SL-03,BR-008,CON-033,Retainer,2023-05-23,2023-07-17,2023-08-21,,,Completed,185930,1518.3,124006.65,Low
+PRJ-0021,CLT-030,Union Manufacturing Data Quality Remediation,SL-05,BR-001,CON-056,Fixed Fee,2023-10-05,2023-11-27,2023-12-31,,,Completed,426010,2844.8,249422.64,Low
+PRJ-0022,CLT-009,Brightpath Energy Workforce Change Program,SL-05,BR-003,CON-057,Time & Materials,2023-01-27,2023-09-07,,,,In Progress,101740,641.1,56210.62,Medium
+PRJ-0023,CLT-083,Evergreen Partners Controls & Compliance Review,SL-03,BR-002,CON-032,Fixed Fee,2025-07-13,2026-01-07,,,,In Progress,40590,308.8,25222.74,High
+PRJ-0024,CLT-074,Capstone Holdings Operating Model Review,SL-04,BR-001,CON-078,Time & Materials,2024-02-07,2024-05-04,2024-05-12,,,Completed,283180,2179.2,185447.62,Medium
+PRJ-0025,CLT-095,Greenfield Municipal Services Customer Analytics Pilot,SL-01,BR-003,CON-017,Fixed Fee,2024-06-16,2024-08-31,2024-10-12,,,Completed,248410,2335.2,147740.22,Medium
+PRJ-0026,CLT-041,Seaway Energy Data Quality Remediation,SL-04,BR-006,CON-078,Fixed Fee,2024-02-09,2024-04-21,,2024-04-20,Procurement cancelled,Cancelled,228150,1770.5,150671.24,High
+PRJ-0027,CLT-050,Brightpath Health Workforce Change Program,SL-01,BR-002,CON-074,Fixed Fee,2025-09-03,2025-11-09,2025-10-28,,,Completed,139830,1286.3,81378.08,Low
+PRJ-0028,CLT-044,Pacific Labs Reporting Modernization,SL-01,BR-005,CON-075,Fixed Fee,2024-10-28,2025-04-26,2025-05-21,,,Completed,213560,1977.7,125120.96,Medium
+PRJ-0029,CLT-053,Clearwater Telecom BI Dashboard Implementation,SL-04,BR-001,CON-036,Fixed Fee,2024-01-15,2024-09-04,2024-10-19,,,Completed,358440,2820.2,239997.95,Medium
+PRJ-0030,CLT-046,Seaway Retail Customer Analytics Pilot,SL-05,BR-006,CON-057,Time & Materials,2025-04-26,2025-12-09,,,,In Progress,228710,1575.9,138167.35,Low
+PRJ-0031,CLT-056,Sterling Holdings BI Dashboard Implementation,SL-01,BR-007,CON-074,Time & Materials,2023-04-17,2023-08-26,2023-09-07,,,,117800,1190.6,75322.75,Medium
+PRJ-0032,CLT-053,Clearwater Telecom Reporting Modernization,SL-01,BR-002,CON-017,Time & Materials,2025-04-21,2025-10-02,2025-10-24,,,Completed,82290,783.5,49571.03,Medium
+PRJ-0033,CLT-075,Sterling Facilities BI Dashboard Implementation,SL-02,BR-007,CON-077,Time & Materials,2024-08-08,2025-01-31,2025-01-20,,,Completed,107960,972.5,67632.62,Low
+PRJ-0034,CLT-004,Ontario Retail Operating Model Review,SL-01,BR-002,CON-006,Fixed Fee,2024-08-11,2025-01-21,2025-01-13,,,Completed,138790,1403.7,88805.09,Medium
+PRJ-0035,CLT-013,Laurentian Transit Data Quality Remediation,SL-03,BR-003,CON-017,Retainer,2025-10-10,2026-03-17,,,,In Progress,111090,862.9,70473.33,Medium
+PRJ-0036,CLT-025,BlueRock Labs Customer Analytics Pilot,SL-05,BR-001,CON-057,Retainer,2023-05-09,2023-06-19,2023-06-24,,,Completed,341520,2231,195603.32,Low
+PRJ-0037,CLT-058,Prairie Group Workforce Change Program,SL-03,BR-005,CON-075,Fixed Fee,2023-01-07,2023-03-21,,,,In Progress,275330,2213.1,180753.52,High
+PRJ-0038,CLT-006,Cedar Media Reporting Modernization,SL-01,BR-003,CON-033,Fixed Fee,2025-07-30,2026-02-09,,,,In Progress,248770,2323.6,147007.87,Medium
+PRJ-0039,CLT-034,Summit Works Customer Analytics Pilot,SL-01,BR-006,CON-075,Fixed Fee,2024-08-28,2025-01-15,2025-02-20,,,Completed,159220,1428,90343.9,High
+PRJ-0040,CLT-059,Ironwood Logistics Data Quality Remediation,SL-04,BR-003,CON-074,Fixed Fee,2023-02-05,2023-08-02,,,,In Progress,121700,979.2,83333.3,Low
+PRJ-0041,CLT-058,Prairie Group Cloud Readiness Assessment,SL-03,BR-004,CON-033,Time & Materials,2024-01-20,2024-09-09,,2024-03-03,Client merger/restructure,Cancelled,267600,2074.3,169415.12,Low
+PRJ-0042,CLT-053,Clearwater Telecom Process Automation Sprint,SL-01,BR-001,CON-069,Retainer,2024-02-05,2024-08-08,2024-08-09,,,Completed,319820,2870.3,181595.73,Low
+PRJ-0043,CLT-050,Brightpath Health BI Dashboard Implementation,SL-06,BR-006,CON-059,Fixed Fee,2025-10-02,2026-04-02,,,,In Progress,127220,1292.3,82336.66,Low
+PRJ-0044,CLT-058,Prairie Group BI Dashboard Implementation,SL-04,BR-004,CON-022,Fixed Fee,2025-01-22,2025-04-18,2025-04-30,,,Completed,315370,2474.8,210604.4,High
+PRJ-0045,CLT-002,Evergreen Labs Operating Model Review,SL-03,BR-006,CON-033,Time & Materials,2025-07-08,2025-10-22,2025-10-18,,,Completed,112290,862.2,70416.43,Low
+PRJ-0046,CLT-028,Birch Health Controls & Compliance Review,SL-03,BR-006,CON-033,Time & Materials,2023-01-27,2023-03-16,2023-04-04,,,Completed,72050,564.7,46123.37,High
+PRJ-0047,CLT-075,Sterling Facilities Process Automation Sprint,SL-02,BR-007,CON-038,Fixed Fee,2023-04-26,2023-07-03,,,,In Progress,260120,2205.2,153354.48,Low
+PRJ-0048,CLT-040,Cedar Holdings Workforce Change Program,SL-05,BR-005,CON-057,Retainer,2024-05-15,2024-07-27,2024-07-27,,,Completed,204160,1329.6,116572.55,Low
+PRJ-0049,CLT-021,Evergreen Health Process Automation Sprint,SL-03,BR-004,CON-033,Fixed Fee,2023-09-30,2024-01-09,2024-02-28,,,Completed,82330,680.5,55577.01,High
+PRJ-0050,CLT-049,Polar Energy Cloud Readiness Assessment,SL-01,BR-006,CON-032,Fixed Fee,2023-12-10,2024-01-19,,,,In Progress,227190,2155.4,136365.43,Low
+PRJ-0051,CLT-042,Hudson Transit Cloud Readiness Assessment,SL-04,BR-006,CON-015,Fixed Fee,2025-09-10,2026-03-07,,,,In Progress,231830,1742.2,148257.51,Low
+PRJ-0052,CLT-055,Metro Education Process Automation Sprint,SL-02,BR-006,CON-006,Fixed Fee,2025-09-17,2026-05-15,,,,In Progress,44450,384,26703.25,High
+PRJ-0053,CLT-042,Hudson Transit Reporting Modernization,SL-04,BR-006,CON-074,Fixed Fee,2023-07-16,2023-08-21,2023-08-19,,,Completed,186110,1473,125353.69,Low
+PRJ-0054,CLT-032,Ironwood University Controls & Compliance Review,SL-04,BR-004,CON-074,Retainer,2024-09-01,2025-01-19,,,,In Progress,276900,2110.8,179632.7,Medium
+PRJ-0055,CLT-021,Evergreen Health Customer Analytics Pilot,SL-02,BR-006,CON-038,Retainer,2024-06-25,2025-01-04,2025-01-07,,,Completed,130300,1178.6,81961.48,Low
+PRJ-0056,CLT-067,Highland Public Health Finance Transformation Roadmap,SL-05,BR-001,CON-056,Time & Materials,2025-06-30,2026-02-06,,,,In Progress,376110,2349.6,206008.99,Low
+PRJ-0057,CLT-004,Ontario Retail Customer Analytics Pilot,SL-01,BR-006,CON-038,Fixed Fee,2024-06-27,2024-10-27,2024-11-03,,,Completed,92830,852.5,53935.34,High
+PRJ-0058,CLT-078,Boreal Foods Controls & Compliance Review,SL-02,BR-005,CON-038,Time & Materials,2025-01-24,2025-07-02,2025-07-18,,,Completed,117670,1065.8,74122.53,Low
+PRJ-0059,CLT-069,Pacific Public Health Controls & Compliance Review,SL-03,BR-007,CON-032,Fixed Fee,2025-03-20,2025-05-27,2025-06-10,,,Completed,61760,462.6,37779.65,Low
+PRJ-0060,CLT-040,Cedar Holdings Workforce Change Program,SL-06,BR-004,CON-059,Fixed Fee,2024-02-27,2024-04-20,2024-04-18,,,Completed,50670,517.8,32988.7,Medium
+PRJ-0061,CLT-026,Northstar Retail Finance Transformation Roadmap,SL-02,BR-005,CON-077,Fixed Fee,2024-01-26,2024-08-15,2024-09-13,,,Completed,64720,562.3,39104.96,Low
+PRJ-0062,CLT-031,Birch Retail Operating Model Review,SL-02,BR-006,CON-048,Time & Materials,2024-02-06,2024-05-07,2024-05-07,,,Completed,175990,1544.6,107416.47,Low
+PRJ-0063,CLT-009,Brightpath Energy Cloud Readiness Assessment,SL-06,BR-004,CON-059,Fixed Fee,2024-09-06,2024-11-12,2024-12-12,,,Completed,221470,2271,144689.78,Medium
+PRJ-0064,CLT-024,Granite Analytics Controls & Compliance Review,SL-06,BR-008,CON-059,Time & Materials,2023-03-13,2023-09-05,2023-10-04,,,Completed,41190,445.5,28380.17,Low
+PRJ-0065,CLT-072,Atlantic Systems Operating Model Review,SL-04,BR-003,CON-074,Fixed Fee,2023-11-05,2024-05-11,2024-05-09,,,Completed,313210,2447,208236.26,Medium
+PRJ-0066,CLT-041,Seaway Energy Cloud Readiness Assessment,SL-03,BR-006,CON-033,Time & Materials,2024-05-29,2024-08-18,2024-10-03,,,Completed,143130,1068.5,87266.95,Medium
+PRJ-0067,CLT-027,Ontario Consulting Customer Analytics Pilot,SL-03,BR-001,CON-075,Fixed Fee,2023-08-04,2023-09-09,2023-08-29,,,,257210,2138.2,174640.84,Low
+PRJ-0068,CLT-087,Ironwood Partners Cloud Readiness Assessment,SL-03,BR-001,CON-033,Fixed Fee,2024-02-06,2024-05-19,2024-05-13,,,Completed,169720,1256.4,102613.61,High
+PRJ-0069,CLT-029,Lakeside Supply Chain Workforce Change Program,SL-03,BR-004,CON-032,Fixed Fee,2025-04-11,2025-08-23,2025-09-26,,,Completed,186330,1415.6,115619.66,Low
+PRJ-0070,CLT-082,Aurora Supply Chain Process Automation Sprint,SL-02,BR-001,CON-038,Time & Materials,2024-08-14,2024-11-09,2024-12-14,,,Completed,119160,1129.4,78545.45,High
+PRJ-0071,CLT-072,Atlantic Systems Process Automation Sprint,SL-02,BR-001,CON-077,Fixed Fee,2023-03-27,2023-09-19,2023-10-21,,,Completed,281870,2375.3,165184.98,Medium
+PRJ-0072,CLT-093,Sterling Telecom Customer Analytics Pilot,SL-02,BR-006,CON-006,Fixed Fee,2023-07-13,2024-01-20,2024-01-16,,,,108420,956.2,66494.5,Low
+PRJ-0073,CLT-052,Highland Hospitality BI Dashboard Implementation,SL-05,BR-001,CON-057,Time & Materials,2024-07-10,2025-01-29,2025-03-15,,,Completed,287390,1801.7,157969.98,Medium
+PRJ-0074,CLT-087,Ironwood Partners Workforce Change Program,SL-01,BR-002,CON-022,Time & Materials,2023-07-01,2024-02-22,2024-04-06,,,Completed,93390,903.6,57170.44,High
+PRJ-0075,CLT-051,Silverline Supply Chain Reporting Modernization,SL-02,BR-003,CON-038,Fixed Fee,2024-07-12,2024-10-17,2024-11-01,,,Completed,293130,2739.9,190540.65,Medium
+PRJ-0076,CLT-027,Ontario Consulting Data Quality Remediation,SL-03,BR-002,CON-017,Time & Materials,2023-04-03,2023-06-24,2023-08-11,,,Completed,167060,1362.1,111250.61,Low
+PRJ-0077,CLT-026,Northstar Retail Finance Transformation Roadmap,SL-06,BR-005,CON-059,Time & Materials,2023-01-22,2023-09-08,2023-10-10,,,Completed,168520,1846.2,117623.29,Low
+PRJ-0078,CLT-005,Capstone Software Workforce Change Program,SL-03,BR-001,CON-075,Time & Materials,2023-08-17,2023-10-25,,2023-09-10,Client merger/restructure,Cancelled,207990,1628.5,133011.03,Low
+PRJ-0079,CLT-082,Aurora Supply Chain BI Dashboard Implementation,SL-04,BR-001,CON-074,Time & Materials,2025-01-04,2025-02-10,2025-03-03,,,Completed,323330,2597.3,221026.39,High
+PRJ-0080,CLT-019,Ontario Education Controls & Compliance Review,SL-02,BR-002,CON-048,Retainer,2023-12-19,2024-05-04,2024-05-01,,,,50150,420,29210.8,Medium
+PRJ-0081,CLT-006,Cedar Media Workforce Change Program,SL-06,BR-003,CON-059,Time & Materials,2025-10-07,2026-05-03,,,,,47980,488.5,31119.77,Low
+PRJ-0082,CLT-028,Birch Health Workforce Change Program,SL-06,BR-003,CON-059,Time & Materials,2025-03-31,2025-07-16,2025-07-10,,,Completed,51740,564.3,35950.88,Low
+PRJ-0083,CLT-085,Riverbend Telecom Controls & Compliance Review,SL-05,BR-002,CON-056,Fixed Fee,2024-04-07,2024-09-24,2024-09-09,,,Completed,171860,1214.9,106515.84,Low
+PRJ-0084,CLT-032,Ironwood University Customer Analytics Pilot,SL-02,BR-006,CON-077,Fixed Fee,2025-08-05,2026-03-06,,,,In Progress,56000,528.2,36734.53,Medium
+PRJ-0085,CLT-053,Clearwater Telecom BI Dashboard Implementation,SL-04,BR-002,CON-036,Fixed Fee,2023-10-01,2023-12-22,2024-01-12,,,Completed,279950,2023.8,172228.32,High
+PRJ-0086,CLT-011,Birch Education Controls & Compliance Review,SL-03,BR-007,CON-017,Time & Materials,2023-04-14,2023-09-17,2023-10-08,,,Completed,118520,872,71224.13,Medium
+PRJ-0087,CLT-031,Birch Retail BI Dashboard Implementation,SL-04,BR-006,CON-078,Fixed Fee,2024-05-26,2024-10-02,2024-11-01,,,Completed,335360,2661.8,226516.14,Medium
+PRJ-0088,CLT-016,Lakeside Works Finance Transformation Roadmap,SL-04,BR-001,CON-078,Fixed Fee,2023-09-27,2024-04-15,2024-04-21,,,Completed,260480,2003.1,170466.33,High
+PRJ-0089,CLT-024,Granite Analytics Process Automation Sprint,SL-06,BR-008,CON-059,Fixed Fee,2024-12-26,2025-03-25,,,,In Progress,88130,879.5,56034.76,Medium
+PRJ-0090,CLT-029,Lakeside Supply Chain Controls & Compliance Review,SL-02,BR-004,CON-006,Fixed Fee,2025-04-17,2025-08-24,2025-08-23,,,Completed,204680,1856.4,129101.91,Medium
+PRJ-0091,CLT-021,Evergreen Health Customer Analytics Pilot,SL-02,BR-001,CON-077,Fixed Fee,2023-05-08,2023-06-28,2023-07-24,,,Completed,90060,808.5,56224.76,Low
+PRJ-0092,CLT-048,Metro FinServ BI Dashboard Implementation,SL-03,BR-005,CON-075,Fixed Fee,2023-05-14,2023-11-30,,,,,158340,1226.6,100182.22,Medium
+PRJ-0093,CLT-019,Ontario Education Reporting Modernization,SL-03,BR-005,CON-069,Fixed Fee,2023-03-28,2023-05-09,2023-06-06,,,Completed,139510,1128.2,92147.67,Low
+PRJ-0094,CLT-092,Lakeside Facilities Finance Transformation Roadmap,SL-01,BR-003,CON-048,Retainer,2024-01-13,2024-03-06,2024-04-18,,,Completed,79130,729,46124,Medium
+PRJ-0095,CLT-017,Polar University Operating Model Review,SL-03,BR-006,CON-069,Retainer,2025-08-23,2025-12-17,2025-12-15,,,Completed,206580,1572.4,128425.34,Low
+PRJ-0096,CLT-018,Northstar Systems Operating Model Review,SL-04,BR-006,CON-015,Fixed Fee,2025-01-23,2025-07-07,,2025-03-10,Client budget freeze,Cancelled,203140,1643.8,139885.92,Low
+PRJ-0097,CLT-025,BlueRock Labs Process Automation Sprint,SL-02,BR-001,CON-048,Fixed Fee,2025-03-30,2025-06-27,,2025-04-15,Client merger/restructure,Cancelled,220920,2091.6,145455.03,High
+PRJ-0098,CLT-061,Granite Consulting Controls & Compliance Review,SL-03,BR-006,CON-017,Time & Materials,2023-02-15,2023-07-30,2023-08-28,,,Completed,40610,329.4,26901.09,Low
+PRJ-0099,CLT-022,Prairie Public Health Process Automation Sprint,SL-06,BR-004,CON-059,Time & Materials,2025-03-08,2025-08-30,2025-08-28,,,Completed,137820,1356.7,86438.29,Medium
+PRJ-0100,CLT-039,Laurentian Logistics Finance Transformation Roadmap,SL-05,BR-005,CON-056,Fixed Fee,2023-11-25,2024-07-04,2024-07-03,,,Completed,179380,1121.6,98338.28,Low
+PRJ-0101,CLT-058,Prairie Group Reporting Modernization,SL-03,BR-005,CON-032,Time & Materials,2023-03-01,2023-09-22,2023-10-09,,,Completed,122570,958.2,78262.99,Low
+PRJ-0102,CLT-048,Metro FinServ Process Automation Sprint,SL-06,BR-003,CON-059,Time & Materials,2024-04-04,2024-08-27,2024-09-21,,,Completed,160420,1600.1,101945.53,Low
+PRJ-0103,CLT-069,Pacific Public Health BI Dashboard Implementation,SL-06,BR-007,CON-059,Fixed Fee,2023-11-03,2024-06-01,2024-06-20,,,,78030,768,48931.51,Medium
+PRJ-0104,CLT-012,BlueRock University Process Automation Sprint,SL-06,BR-006,CON-059,Fixed Fee,2023-10-22,2024-03-19,2024-04-21,,,Completed,48880,514.7,32791.28,Medium
+PRJ-0105,CLT-085,Riverbend Telecom Workforce Change Program,SL-02,BR-002,CON-077,Fixed Fee,2025-05-03,2025-07-19,2025-07-13,,,Completed,68710,595.9,41441.24,Medium
+PRJ-0106,CLT-063,Harbour Software Workforce Change Program,SL-03,BR-002,CON-033,Time & Materials,2025-01-08,2025-02-14,2025-02-04,,,Completed,30200,235.6,19241.71,Low
+PRJ-0107,CLT-058,Prairie Group Customer Analytics Pilot,SL-04,BR-004,CON-074,Fixed Fee,2024-02-07,2024-05-17,2024-06-03,,,Completed,77060,573.9,48835.96,High
+PRJ-0108,CLT-011,Birch Education Controls & Compliance Review,SL-03,BR-007,CON-069,Time & Materials,2024-01-18,2024-06-09,2024-07-28,,,Completed,179200,1362.7,111296.17,Low
+PRJ-0109,CLT-063,Harbour Software Controls & Compliance Review,SL-03,BR-002,CON-075,Fixed Fee,2024-10-22,2024-12-08,2024-12-25,,,Completed,151790,1194.6,97567.45,Medium
+PRJ-0110,CLT-037,Ontario Utilities Workforce Change Program,SL-01,BR-005,CON-038,Time & Materials,2024-09-22,2025-02-09,2025-02-02,,,Completed,127680,1191.5,75384.97,Medium
+PRJ-0111,CLT-044,Pacific Labs Workforce Change Program,SL-02,BR-004,CON-006,Fixed Fee,2025-07-05,2026-02-09,,,,In Progress,55420,481.8,33505.23,Low
+PRJ-0112,CLT-009,Brightpath Energy Process Automation Sprint,SL-05,BR-005,CON-057,Retainer,2024-05-12,2024-10-22,,2024-06-21,Client budget freeze,Cancelled,248710,1589.1,139323.57,Low
+PRJ-0113,CLT-026,Northstar Retail Process Automation Sprint,SL-02,BR-004,CON-038,Retainer,2024-07-26,2024-12-01,,,,In Progress,149150,1289.3,89663.45,Low
+PRJ-0114,CLT-072,Atlantic Systems Process Automation Sprint,SL-03,BR-002,CON-017,Retainer,2024-11-03,2024-12-10,2024-11-28,,,Completed,265850,2052.5,167635.85,Medium
+PRJ-0115,CLT-043,Civic Capital Customer Analytics Pilot,SL-06,BR-005,CON-059,Fixed Fee,2025-05-07,2025-07-29,2025-09-01,,,Completed,105730,1112,70849.67,Low
+PRJ-0116,CLT-008,Highland Labs Finance Transformation Roadmap,SL-02,BR-006,CON-077,Time & Materials,2025-09-14,2025-12-13,,,,In Progress,83000,701.9,48812.47,High
+PRJ-0117,CLT-031,Birch Retail Customer Analytics Pilot,SL-03,BR-006,CON-069,Fixed Fee,2024-10-06,2025-01-24,,2024-11-09,Client merger/restructure,Cancelled,233790,1905.4,155626.18,Medium
+PRJ-0118,CLT-095,Greenfield Municipal Services Cloud Readiness Assessment,SL-03,BR-001,CON-032,Fixed Fee,2024-04-09,2024-12-05,2024-12-08,,,Completed,85880,660.5,53943.6,Low
+PRJ-0119,CLT-033,Hudson Telecom Finance Transformation Roadmap,SL-02,BR-002,CON-006,Retainer,2024-10-13,2025-02-10,2025-01-26,,,Completed,251850,2364.3,164419.16,Medium
+PRJ-0120,CLT-076,Seaway Capital Process Automation Sprint,SL-06,BR-003,CON-059,Fixed Fee,2023-08-13,2023-10-18,2023-10-20,,,Completed,59950,629.5,40104.95,High
+PRJ-0121,CLT-062,Capstone Construction BI Dashboard Implementation,SL-03,BR-003,CON-033,Fixed Fee,2023-01-26,2023-08-13,2023-09-20,,,Completed,226780,1696.6,138569.28,Low
+PRJ-0122,CLT-056,Sterling Holdings Reporting Modernization,SL-04,BR-003,CON-074,Fixed Fee,2024-02-17,2024-04-05,,2024-03-29,Client merger/restructure,Cancelled,115100,876.7,74607.47,Medium
+PRJ-0123,CLT-075,Sterling Facilities Operating Model Review,SL-06,BR-008,CON-059,Time & Materials,2024-08-23,2024-10-19,,2024-09-18,Procurement cancelled,Cancelled,63110,689.6,43934.05,Low
+PRJ-0124,CLT-032,Ironwood University Finance Transformation Roadmap,SL-01,BR-006,CON-022,Fixed Fee,2025-06-20,2025-12-19,,,,In Progress,162580,1638,103630.6,Medium
+PRJ-0125,CLT-091,Seaway FinServ Workforce Change Program,SL-04,BR-002,CON-015,Fixed Fee,2025-02-06,2025-04-09,2025-05-08,,,Completed,50790,402.4,34240.54,Medium
+PRJ-0126,CLT-047,Metro Logistics BI Dashboard Implementation,SL-04,BR-002,CON-074,Retainer,2023-03-01,2023-09-18,2023-10-07,,,Completed,78550,628.1,53447.44,Low
+PRJ-0127,CLT-047,Metro Logistics BI Dashboard Implementation,SL-02,BR-002,CON-077,Fixed Fee,2023-05-02,2023-09-14,2023-09-04,,,Completed,174070,1638.6,113954.82,Low
+PRJ-0128,CLT-074,Capstone Holdings Cloud Readiness Assessment,SL-05,BR-005,CON-057,Time & Materials,2023-08-22,2023-12-20,2023-12-29,,,Completed,136360,874.5,76675.85,High
+PRJ-0129,CLT-085,Riverbend Telecom Data Quality Remediation,SL-02,BR-003,CON-038,Fixed Fee,2023-10-11,2024-03-09,,,,In Progress,142770,1217.3,84655.35,Low
+PRJ-0130,CLT-062,Capstone Construction Operating Model Review,SL-04,BR-005,CON-036,Fixed Fee,2025-08-31,2025-12-23,,,,,260580,1871.1,159230.65,Low
+PRJ-0131,CLT-041,Seaway Energy Customer Analytics Pilot,SL-01,BR-006,CON-033,Time & Materials,2025-05-23,2026-01-08,,,,In Progress,82500,737.7,46668.94,Medium
+PRJ-0132,CLT-010,Pinecrest Telecom Finance Transformation Roadmap,SL-04,BR-002,CON-015,Fixed Fee,2024-06-27,2024-11-26,2025-01-03,,,Completed,64480,467.1,39752.52,Medium
+PRJ-0133,CLT-066,Hudson Energy Workforce Change Program,SL-02,BR-001,CON-006,Fixed Fee,2025-04-20,2025-06-30,2025-07-16,,,Completed,89560,801,55701.54,Medium
+PRJ-0134,CLT-049,Polar Energy Cloud Readiness Assessment,SL-06,BR-002,CON-059,Fixed Fee,2024-07-19,2024-12-19,2024-12-22,,,Completed,159960,1655.3,105458.67,High
+PRJ-0135,CLT-060,Aurora Group Finance Transformation Roadmap,SL-04,BR-004,CON-022,Fixed Fee,2024-03-09,2024-10-03,,2024-05-19,Procurement cancelled,Cancelled,327480,2353.7,200302.74,Low
+PRJ-0136,CLT-052,Highland Hospitality Data Quality Remediation,SL-02,BR-002,CON-006,Fixed Fee,2024-07-16,2024-09-21,2024-10-27,,,,51810,472.3,32845.52,Low
+PRJ-0137,CLT-017,Polar University Controls & Compliance Review,SL-01,BR-006,CON-078,Time & Materials,2024-07-10,2024-11-05,2024-12-16,,,Completed,225320,2087.9,132093.15,Low
+PRJ-0138,CLT-030,Union Manufacturing Process Automation Sprint,SL-04,BR-001,CON-036,Time & Materials,2024-08-06,2024-11-05,2024-11-27,,,Completed,90720,683.7,58183.88,Medium
+PRJ-0139,CLT-029,Lakeside Supply Chain Data Quality Remediation,SL-03,BR-004,CON-069,Fixed Fee,2023-11-23,2024-06-11,2024-06-26,,,Completed,181490,1497.6,122317.81,Low
+PRJ-0140,CLT-073,Skyline Telecom Operating Model Review,SL-06,BR-002,CON-059,Retainer,2025-09-27,2025-12-12,,,,,63780,628.4,40037.71,Low
+PRJ-0141,CLT-087,Ironwood Partners Customer Analytics Pilot,SL-05,BR-002,CON-056,Time & Materials,2025-09-23,2026-01-08,,,,In Progress,318350,2163.8,189718.11,Low
+PRJ-0142,CLT-011,Birch Education Finance Transformation Roadmap,SL-03,BR-007,CON-017,Fixed Fee,2023-12-17,2024-07-13,2024-08-29,,,Completed,75510,572.3,46741.23,Medium
+PRJ-0143,CLT-069,Pacific Public Health Controls & Compliance Review,SL-02,BR-008,CON-006,Fixed Fee,2025-08-24,2025-10-11,2025-10-10,,,Completed,170910,1548.3,107672.93,Low
+PRJ-0144,CLT-069,Pacific Public Health Reporting Modernization,SL-06,BR-007,CON-059,Fixed Fee,2023-09-26,2024-02-15,2024-01-30,,,Completed,166500,1645.8,104858.66,Low
+PRJ-0145,CLT-005,Capstone Software Workforce Change Program,SL-03,BR-003,CON-069,Fixed Fee,2025-01-14,2025-07-30,2025-07-17,,,Completed,60610,489.3,39962.82,Low
+PRJ-0146,CLT-076,Seaway Capital Controls & Compliance Review,SL-02,BR-003,CON-048,Time & Materials,2023-01-03,2023-04-14,,,,In Progress,98200,824.6,57345.36,Low
+PRJ-0147,CLT-072,Atlantic Systems Cloud Readiness Assessment,SL-03,BR-001,CON-032,Time & Materials,2024-10-27,2025-01-31,2025-03-22,,,Completed,103580,765.4,62511.6,Medium
+PRJ-0148,CLT-082,Aurora Supply Chain Operating Model Review,SL-05,BR-002,CON-057,Retainer,2023-04-25,2023-12-17,2024-01-22,,,Completed,402780,2712.2,237799.03,Low
+PRJ-0149,CLT-063,Harbour Software Controls & Compliance Review,SL-06,BR-006,CON-059,Time & Materials,2025-05-10,2025-08-24,2025-08-06,,,Completed,140530,1449.9,92375.45,High
+PRJ-0150,CLT-037,Ontario Utilities Process Automation Sprint,SL-02,BR-005,CON-006,Fixed Fee,2024-02-17,2024-09-04,2024-09-03,,,Completed,248760,2108.1,146601.56,Medium
+PRJ-0151,CLT-062,Capstone Construction Reporting Modernization,SL-02,BR-003,CON-048,Fixed Fee,2025-03-25,2025-11-06,2025-11-04,,,Completed,113240,1001.5,69648,Medium
+PRJ-0152,CLT-044,Pacific Labs Process Automation Sprint,SL-03,BR-002,CON-032,Retainer,2023-06-15,2023-08-31,2023-09-29,,,Completed,75550,587.6,47989.29,Medium
+PRJ-0153,CLT-078,Boreal Foods Customer Analytics Pilot,SL-04,BR-003,CON-022,Fixed Fee,2023-05-16,2023-10-20,2023-10-10,,,Completed,63070,491.9,41860.38,Low
+PRJ-0154,CLT-085,Riverbend Telecom BI Dashboard Implementation,SL-06,BR-001,CON-059,Fixed Fee,2023-03-03,2023-06-02,2023-05-19,,,Completed,25060,268.1,17080.2,Medium
+PRJ-0155,CLT-060,Aurora Group Operating Model Review,SL-05,BR-005,CON-056,Fixed Fee,2023-06-04,2023-11-07,2023-12-08,,,Completed,194210,1265.5,110952.46,Low
+PRJ-0156,CLT-037,Ontario Utilities Cloud Readiness Assessment,SL-05,BR-008,CON-057,Fixed Fee,2023-04-20,2023-08-28,2023-08-15,,,Completed,286530,1995.1,174925.3,Medium
+PRJ-0157,CLT-019,Ontario Education Data Quality Remediation,SL-06,BR-002,CON-059,Fixed Fee,2025-09-15,2026-04-20,,,,In Progress,146490,1592.8,101481.86,High
+PRJ-0158,CLT-015,Ontario Group Workforce Change Program,SL-03,BR-003,CON-033,Time & Materials,2023-11-10,2024-02-21,,2023-12-14,Client budget freeze,Cancelled,101040,776.2,63394.77,Medium
+PRJ-0159,CLT-017,Polar University Reporting Modernization,SL-02,BR-006,CON-048,Time & Materials,2023-01-05,2023-07-13,2023-07-24,,,Completed,223060,1952.2,135765.52,Medium
+PRJ-0160,CLT-084,Laurentian Analytics Reporting Modernization,SL-03,BR-002,CON-033,Fixed Fee,2025-04-21,2025-08-16,,2025-08-07,Scope withdrawn,,152550,1196.1,97694.04,Medium
+PRJ-0161,CLT-053,Clearwater Telecom Workforce Change Program,SL-03,BR-002,CON-033,Fixed Fee,2023-12-08,2024-06-22,2024-06-30,,,Completed,138260,1078.1,88055.34,Medium
+PRJ-0162,CLT-007,Lakeside Capital Customer Analytics Pilot,SL-02,BR-007,CON-048,Time & Materials,2023-07-28,2024-01-26,,,,,79080,714.1,49658.52,High
+PRJ-0163,CLT-005,Capstone Software Process Automation Sprint,SL-05,BR-004,CON-056,Time & Materials,2025-06-10,2025-11-04,2025-11-22,,,,422440,2814.7,246782.99,High
+PRJ-0164,CLT-087,Ironwood Partners Finance Transformation Roadmap,SL-02,BR-002,CON-048,Fixed Fee,2024-04-05,2024-11-03,2024-11-28,,,Completed,45680,407.4,28332.82,Low
+PRJ-0165,CLT-059,Ironwood Logistics BI Dashboard Implementation,SL-05,BR-006,CON-057,Time & Materials,2023-07-15,2023-09-09,2023-10-01,,,Completed,270110,1711.8,150089.56,Medium
+PRJ-0166,CLT-018,Northstar Systems Controls & Compliance Review,SL-03,BR-006,CON-017,Time & Materials,2025-08-11,2026-03-26,,,,In Progress,61530,457.9,37398.68,High
+PRJ-0167,CLT-055,Metro Education Reporting Modernization,SL-02,BR-006,CON-048,Retainer,2025-08-09,2026-03-20,,,,In Progress,199410,1668.3,116019.8,Low
+PRJ-0168,CLT-074,Capstone Holdings Cloud Readiness Assessment,SL-01,BR-002,CON-017,Time & Materials,2023-05-06,2023-08-03,2023-08-30,,,Completed,95000,876.3,55442.41,High
+PRJ-0169,CLT-007,Lakeside Capital Operating Model Review,SL-02,BR-007,CON-077,Time & Materials,2023-05-03,2023-07-01,2023-07-09,,,Completed,50430,462.2,32143.55,Medium
+PRJ-0170,CLT-002,Evergreen Labs BI Dashboard Implementation,SL-04,BR-008,CON-015,Retainer,2023-11-23,2024-01-22,2024-02-09,,,Completed,164580,1190.2,101284.05,High
+PRJ-0171,CLT-042,Hudson Transit Finance Transformation Roadmap,SL-06,BR-006,CON-059,Time & Materials,2025-02-14,2025-06-28,2025-06-28,,,Completed,144440,1436.3,91509.57,Medium
+PRJ-0172,CLT-015,Ontario Group Cloud Readiness Assessment,SL-01,BR-003,CON-015,Fixed Fee,2023-12-18,2024-07-27,2024-07-11,,,Completed,195520,1888.6,119486.31,Low
+PRJ-0173,CLT-053,Clearwater Telecom Controls & Compliance Review,SL-05,BR-001,CON-056,Time & Materials,2023-04-23,2023-06-18,2023-06-06,,,Completed,327660,2074.1,181847.69,High
+PRJ-0174,CLT-024,Granite Analytics Data Quality Remediation,SL-06,BR-008,CON-059,Time & Materials,2025-02-18,2025-06-30,,2025-04-13,Client merger/restructure,Cancelled,123650,1272,81038.78,Low
+PRJ-0175,CLT-050,Brightpath Health Reporting Modernization,SL-03,BR-006,CON-069,Retainer,2023-01-15,2023-05-12,2023-05-06,,,Completed,191560,1442.9,117847.58,Low
+PRJ-0176,CLT-005,Capstone Software Cloud Readiness Assessment,SL-02,BR-003,CON-006,Time & Materials,2023-05-24,2023-12-22,2024-01-28,,,Completed,301120,2610,181509.67,Low
+PRJ-0177,CLT-077,Prairie Labs Customer Analytics Pilot,SL-04,BR-002,CON-074,Time & Materials,2024-08-17,2024-10-23,2024-10-28,,,Completed,222790,1758.8,149672.09,Low
+PRJ-0178,CLT-060,Aurora Group Cloud Readiness Assessment,SL-06,BR-004,CON-059,Fixed Fee,2025-08-02,2026-01-06,,,,,65520,686.5,43737.13,Medium
+PRJ-0179,CLT-011,Birch Education Controls & Compliance Review,SL-05,BR-007,CON-056,Fixed Fee,2025-09-23,2026-03-11,,,,,282050,1970,172726.33,Low
+PRJ-0180,CLT-010,Pinecrest Telecom Cloud Readiness Assessment,SL-05,BR-001,CON-057,Time & Materials,2023-09-25,2024-02-29,2024-04-12,,,Completed,252850,1770.2,155207.38,Low
+PRJ-0181,CLT-036,Maple Transit Workforce Change Program,SL-05,BR-006,CON-056,Fixed Fee,2023-11-30,2024-01-17,2024-01-28,,,Completed,165460,1150.6,100878.97,Medium
+PRJ-0182,CLT-009,Brightpath Energy Data Quality Remediation,SL-02,BR-005,CON-077,Time & Materials,2024-07-02,2024-11-06,2024-10-19,,,Completed,182250,1563.8,108749.58,Medium
+PRJ-0183,CLT-005,Capstone Software Finance Transformation Roadmap,SL-05,BR-004,CON-057,Fixed Fee,2024-04-13,2024-10-07,2024-09-22,,,,292360,1855.7,162700.22,Low
+PRJ-0184,CLT-056,Sterling Holdings Workforce Change Program,SL-02,BR-005,CON-038,Fixed Fee,2023-10-29,2024-06-15,2024-08-02,,,Completed,200500,1756.3,122136.02,Medium
+PRJ-0185,CLT-080,Northstar Construction Process Automation Sprint,SL-04,BR-008,CON-022,Retainer,2024-02-23,2024-06-15,,2024-03-15,Scope withdrawn,Cancelled,145260,1103.1,93870.65,Medium
+PRJ-0186,CLT-020,Cedar Education Data Quality Remediation,SL-02,BR-001,CON-038,Fixed Fee,2025-05-15,2025-10-13,2025-10-31,,,Completed,196180,1755.6,122092.61,High
+PRJ-0187,CLT-035,Evergreen Holdings Workforce Change Program,SL-02,BR-002,CON-077,Time & Materials,2025-01-31,2025-04-21,,2025-02-22,Scope withdrawn,Cancelled,87850,828.9,57644.99,Low
+PRJ-0188,CLT-040,Cedar Holdings Data Quality Remediation,SL-06,BR-005,CON-059,Retainer,2024-01-04,2024-06-14,2024-06-13,,,Completed,109190,1104.7,70380.93,Low
+PRJ-0189,CLT-073,Skyline Telecom BI Dashboard Implementation,SL-02,BR-001,CON-038,Time & Materials,2023-01-14,2023-05-18,2023-06-28,,,Completed,172040,1578,109736.36,Low
+PRJ-0190,CLT-086,Boreal Public Health Workforce Change Program,SL-02,BR-003,CON-077,Retainer,2024-07-24,2024-12-19,2025-01-05,,,Completed,164150,1472.4,102395.26,Medium
+PRJ-0191,CLT-001,Cedar Municipal Services Cloud Readiness Assessment,SL-03,BR-002,CON-033,Time & Materials,2025-08-16,2025-12-16,,,,In Progress,64220,488.5,39894.98,Medium
+PRJ-0192,CLT-042,Hudson Transit Customer Analytics Pilot,SL-05,BR-005,CON-057,Fixed Fee,2023-12-25,2024-03-18,,2024-02-12,Client budget freeze,Cancelled,416240,2597.2,227718.26,Low
+PRJ-0193,CLT-032,Ironwood University Reporting Modernization,SL-01,BR-006,CON-015,Fixed Fee,2023-08-22,2023-12-02,2024-01-03,,,Completed,218790,2024.5,128082.19,Low
+PRJ-0194,CLT-030,Union Manufacturing Process Automation Sprint,SL-06,BR-001,CON-059,Time & Materials,2025-09-02,2025-10-07,,2025-09-17,Client merger/restructure,Cancelled,140220,1385.9,88299.56,Medium
+PRJ-0195,CLT-015,Ontario Group Operating Model Review,SL-02,BR-003,CON-006,Time & Materials,2024-12-04,2025-04-05,2025-05-08,,,Completed,141760,1251.8,87054.61,Low
+PRJ-0196,CLT-031,Birch Retail Process Automation Sprint,SL-03,BR-008,CON-032,Fixed Fee,2024-03-06,2024-06-11,2024-06-28,,,Completed,120750,917.8,74959.76,Low
+PRJ-0197,CLT-050,Brightpath Health Controls & Compliance Review,SL-05,BR-006,CON-056,Fixed Fee,2025-07-01,2025-08-08,2025-08-18,,,Completed,115690,786.9,68990.62,Medium
+PRJ-0198,CLT-088,BlueRock Supply Chain Controls & Compliance Review,SL-05,BR-001,CON-057,Fixed Fee,2025-04-06,2025-11-20,2025-12-02,,,Completed,404810,2591.2,227188.62,Low
+PRJ-0199,CLT-092,Lakeside Facilities Cloud Readiness Assessment,SL-03,BR-006,CON-075,Time & Materials,2024-03-26,2024-06-17,2024-07-07,,,Completed,158640,1305.4,106615.5,Low
+PRJ-0200,CLT-020,Cedar Education Operating Model Review,SL-04,BR-002,CON-022,Retainer,2023-02-01,2023-04-29,2023-06-03,,,Completed,164730,1262.5,107439.8,Medium
+PRJ-0201,CLT-086,Boreal Public Health Controls & Compliance Review,SL-05,BR-007,CON-056,Fixed Fee,2024-04-25,2024-11-22,2025-01-08,,,,126600,795.3,69729.86,Medium
+PRJ-0202,CLT-041,Seaway Energy Process Automation Sprint,SL-02,BR-006,CON-048,Retainer,2023-06-09,2023-07-31,,,,In Progress,260580,2298,159808.81,High
+PRJ-0203,CLT-070,Brightpath Group Process Automation Sprint,SL-01,BR-007,CON-077,Fixed Fee,2024-01-30,2024-06-22,2024-06-14,,,Completed,233890,2322.3,146924.17,Medium
+PRJ-0204,CLT-037,Ontario Utilities Data Quality Remediation,SL-06,BR-006,CON-059,Time & Materials,2024-12-15,2025-05-24,2025-06-23,,,Completed,238910,2463.4,156943.89,Medium
+PRJ-0205,CLT-044,Pacific Labs Workforce Change Program,SL-02,BR-002,CON-006,Fixed Fee,2024-01-01,2024-07-15,,,,In Progress,62050,572.1,39783.41,Medium
+PRJ-0206,CLT-042,Hudson Transit Process Automation Sprint,SL-03,BR-006,CON-017,Fixed Fee,2024-08-08,2024-11-23,2024-11-14,,,Completed,163090,1294.4,105719.54,High
+PRJ-0207,CLT-088,BlueRock Supply Chain Finance Transformation Roadmap,SL-06,BR-003,CON-059,Retainer,2025-10-05,2026-03-11,,,,,188400,1904.9,121360.62,Low
+PRJ-0208,CLT-018,Northstar Systems Controls & Compliance Review,SL-06,BR-006,CON-059,Time & Materials,2025-02-22,2025-06-18,2025-06-18,,,Completed,76310,778.2,49577.37,Low
+PRJ-0209,CLT-060,Aurora Group Customer Analytics Pilot,SL-05,BR-004,CON-056,Fixed Fee,2024-06-29,2024-09-04,2024-08-28,,,,338960,2154.7,188917.87,Low
+PRJ-0210,CLT-009,Brightpath Energy Workforce Change Program,SL-03,BR-004,CON-032,Fixed Fee,2023-04-01,2023-08-08,2023-09-15,,,Completed,111070,902.4,73701.03,Low
+PRJ-0211,CLT-005,Capstone Software Process Automation Sprint,SL-02,BR-003,CON-006,Retainer,2025-01-26,2025-05-09,2025-05-27,,,Completed,222440,2102.9,146241.46,High
+PRJ-0212,CLT-030,Union Manufacturing Controls & Compliance Review,SL-06,BR-002,CON-059,Time & Materials,2025-10-10,2026-01-14,,,,In Progress,115610,1214.5,77380.31,Low
+PRJ-0213,CLT-051,Silverline Supply Chain Cloud Readiness Assessment,SL-02,BR-003,CON-038,Fixed Fee,2025-04-25,2025-07-11,2025-07-03,,,Completed,64730,542.9,37757.11,Low
+PRJ-0214,CLT-032,Ironwood University BI Dashboard Implementation,SL-06,BR-004,CON-059,Fixed Fee,2023-11-25,2024-02-11,2024-03-16,,,,70890,731.7,46618.5,Medium
+PRJ-0215,CLT-023,Highland Consulting BI Dashboard Implementation,SL-01,BR-001,CON-006,Fixed Fee,2023-05-14,2023-12-23,2024-01-21,,,Completed,140500,1270.1,80352.44,Low
+PRJ-0216,CLT-034,Summit Works Workforce Change Program,SL-05,BR-006,CON-057,Retainer,2023-05-30,2023-07-17,2023-09-05,,,Completed,197070,1355.2,118820.86,High
+PRJ-0217,CLT-021,Evergreen Health BI Dashboard Implementation,SL-03,BR-002,CON-069,Fixed Fee,2025-04-16,2025-06-04,,2025-05-18,Scope withdrawn,Cancelled,59970,441.7,36074.85,Low
+PRJ-0218,CLT-047,Metro Logistics BI Dashboard Implementation,SL-03,BR-008,CON-033,Time & Materials,2024-05-06,2024-08-22,2024-09-06,,,Completed,123920,931,76040.26,Medium
+PRJ-0219,CLT-050,Brightpath Health Cloud Readiness Assessment,SL-02,BR-006,CON-048,Time & Materials,2025-09-09,2026-01-17,,,,In Progress,76620,646.6,44966.83,Low
+PRJ-0220,CLT-037,Ontario Utilities Customer Analytics Pilot,SL-06,BR-005,CON-059,Fixed Fee,2023-08-30,2024-01-18,2024-02-13,,,Completed,244350,2584.6,164665.38,Low
+PRJ-0221,CLT-067,Highland Public Health Controls & Compliance Review,SL-04,BR-008,CON-036,Fixed Fee,2023-05-30,2023-10-03,2023-10-20,,,Completed,297770,2337.9,198955.59,Low
+PRJ-0222,CLT-009,Brightpath Energy Finance Transformation Roadmap,SL-02,BR-004,CON-077,Fixed Fee,2025-05-16,2025-10-26,2025-10-23,,,Completed,268750,2355.9,163834.83,Medium
+PRJ-0223,CLT-042,Hudson Transit BI Dashboard Implementation,SL-05,BR-006,CON-057,Retainer,2024-12-28,2025-05-09,2025-04-22,,,Completed,263790,1748.6,153309.69,Medium
+PRJ-0224,CLT-008,Highland Labs Data Quality Remediation,SL-02,BR-005,CON-006,Time & Materials,2025-10-16,2025-12-04,,,,In Progress,135230,1192.6,82940.55,Medium
+PRJ-0225,CLT-062,Capstone Construction Workforce Change Program,SL-04,BR-003,CON-015,Retainer,2023-09-21,2024-01-11,2024-01-05,,,Completed,213550,1653.5,140715.6,Low
+PRJ-0226,CLT-047,Metro Logistics Cloud Readiness Assessment,SL-02,BR-002,CON-038,Retainer,2023-05-23,2023-08-03,,,,In Progress,47710,408.4,28399.22,Low
+PRJ-0227,CLT-025,BlueRock Labs Operating Model Review,SL-04,BR-002,CON-036,Fixed Fee,2025-04-23,2025-09-05,2025-10-16,,,Completed,261940,1924.2,163748.69,Low
+PRJ-0228,CLT-068,TrueNorth Networks Controls & Compliance Review,SL-01,BR-002,CON-015,Fixed Fee,2024-07-01,2025-01-20,,2024-08-31,Procurement cancelled,Cancelled,118550,1193.5,75510.03,Medium
+PRJ-0229,CLT-070,Brightpath Group BI Dashboard Implementation,SL-02,BR-007,CON-038,Fixed Fee,2023-03-05,2023-08-11,2023-07-30,,,Completed,158930,1328.8,92412.71,Low
+PRJ-0230,CLT-017,Polar University Workforce Change Program,SL-02,BR-006,CON-006,Time & Materials,2023-02-02,2023-07-15,2023-07-12,,,Completed,259540,2225.6,154776.16,Low
+PRJ-0231,CLT-027,Ontario Consulting Data Quality Remediation,SL-03,BR-002,CON-017,Fixed Fee,2024-06-19,2025-01-22,2025-02-15,,,Completed,257800,2079.3,169830.88,Medium
+PRJ-0232,CLT-037,Ontario Utilities Customer Analytics Pilot,SL-02,BR-008,CON-006,Time & Materials,2024-12-21,2025-03-01,2025-03-12,,,Completed,230100,2031.8,141298.94,Medium
+PRJ-0233,CLT-037,Ontario Utilities Operating Model Review,SL-04,BR-004,CON-078,Time & Materials,2025-05-28,2025-08-15,,,,In Progress,167270,1214.6,103365.76,High
+PRJ-0234,CLT-076,Seaway Capital Data Quality Remediation,SL-02,BR-003,CON-077,Fixed Fee,2024-05-09,2024-07-28,2024-09-06,,,Completed,56580,503.3,35000,Medium
+PRJ-0235,CLT-005,Capstone Software Reporting Modernization,SL-04,BR-003,CON-022,Retainer,2025-03-24,2025-05-18,2025-06-24,,,Completed,402470,3017.6,256800.35,Low
+PRJ-0236,CLT-072,Atlantic Systems Controls & Compliance Review,SL-04,BR-001,CON-022,Fixed Fee,2023-10-18,2024-04-18,2024-05-25,,,Completed,230000,1717.7,146174.64,High
+PRJ-0237,CLT-095,Greenfield Municipal Services Finance Transformation Roadmap,SL-05,BR-001,CON-057,Retainer,2023-08-06,2023-09-29,2023-10-31,,,Completed,200070,1389.3,121811.77,Low
+PRJ-0238,CLT-090,TrueNorth Consulting Cloud Readiness Assessment,SL-05,BR-006,CON-056,Fixed Fee,2025-01-24,2025-03-09,2025-04-06,,,Completed,153290,1016.6,89134.56,High
+PRJ-0239,CLT-025,BlueRock Labs Data Quality Remediation,SL-05,BR-005,CON-056,Retainer,2023-05-18,2023-11-14,,2023-08-30,Scope withdrawn,Cancelled,408830,2582.8,226454.44,Medium
+PRJ-0240,CLT-088,BlueRock Supply Chain Reporting Modernization,SL-04,BR-003,CON-078,Time & Materials,2024-04-18,2024-09-04,2024-10-23,,,Completed,424360,3362.1,286113.16,Medium
+PRJ-0241,CLT-065,Keystone Energy Data Quality Remediation,SL-01,BR-001,CON-006,Time & Materials,2025-08-06,2026-01-19,,,,In Progress,74140,683.4,43236.71,Medium
+PRJ-0242,CLT-085,Riverbend Telecom Finance Transformation Roadmap,SL-06,BR-007,CON-059,Retainer,2025-05-18,2025-09-22,2025-10-08,,,Completed,39920,391.4,24937.55,Low
+PRJ-0243,CLT-035,Evergreen Holdings Operating Model Review,SL-02,BR-001,CON-048,Time & Materials,2025-08-17,2026-04-07,,,,In Progress,102590,906.5,63039.39,Medium
+PRJ-0244,CLT-027,Ontario Consulting Reporting Modernization,SL-04,BR-001,CON-022,Fixed Fee,2024-07-27,2025-02-28,2025-02-13,,,Completed,206900,1587.6,135105.61,High
+PRJ-0245,CLT-031,Birch Retail Customer Analytics Pilot,SL-04,BR-005,CON-078,Time & Materials,2024-05-16,2024-08-27,2024-10-11,,,Completed,74440,559.3,47596.08,Low
+PRJ-0246,CLT-046,Seaway Retail BI Dashboard Implementation,SL-06,BR-008,CON-059,Fixed Fee,2024-03-08,2024-09-01,2024-10-18,,,Completed,49570,533.4,33982.39,Medium
+PRJ-0247,CLT-011,Birch Education Cloud Readiness Assessment,SL-02,BR-007,CON-006,Fixed Fee,2023-06-09,2023-08-06,2023-09-06,,,,76540,659.4,45857.62,Low
+PRJ-0248,CLT-082,Aurora Supply Chain Customer Analytics Pilot,SL-02,BR-002,CON-006,Fixed Fee,2025-03-03,2025-07-17,2025-08-22,,,Completed,243150,2043.6,142116.61,Low
+PRJ-0249,CLT-032,Ironwood University Reporting Modernization,SL-01,BR-007,CON-032,Fixed Fee,2024-06-30,2025-01-11,2025-01-03,,,Completed,239020,2211.2,139894.26,Medium
+PRJ-0250,CLT-010,Pinecrest Telecom Reporting Modernization,SL-04,BR-001,CON-036,Retainer,2024-02-27,2024-10-07,2024-11-18,,,Completed,94350,690.2,58734.35,Low
+PRJ-0251,CLT-068,TrueNorth Networks Controls & Compliance Review,SL-01,BR-002,CON-048,Time & Materials,2024-11-08,2025-05-05,2025-06-14,,,Completed,94020,856.8,54207.84,High
+PRJ-0252,CLT-058,Prairie Group BI Dashboard Implementation,SL-04,BR-004,CON-022,Time & Materials,2024-01-28,2024-03-25,2024-03-20,,,Completed,331080,2657.5,226156.98,Low
+PRJ-0253,CLT-088,BlueRock Supply Chain Data Quality Remediation,SL-03,BR-004,CON-032,Time & Materials,2023-10-12,2023-12-11,2024-01-24,,,,136550,1088.1,88874.53,High
+PRJ-0254,CLT-092,Lakeside Facilities Finance Transformation Roadmap,SL-04,BR-006,CON-022,Fixed Fee,2023-01-15,2023-03-06,2023-03-14,,,Completed,231460,1728.7,147115.86,High
+PRJ-0255,CLT-067,Highland Public Health Workforce Change Program,SL-05,BR-003,CON-057,Retainer,2023-01-26,2023-07-06,2023-08-20,,,Completed,450950,2935.7,257389.95,Medium
+PRJ-0256,CLT-019,Ontario Education BI Dashboard Implementation,SL-05,BR-002,CON-057,Retainer,2025-05-10,2025-08-24,2025-10-07,,,Completed,112620,755.5,66240.45,Low
+PRJ-0257,CLT-057,Greenfield Partners Cloud Readiness Assessment,SL-04,BR-001,CON-078,Time & Materials,2024-03-05,2024-10-24,2024-12-13,,,Completed,288980,2321.6,197564.54,Low
+PRJ-0258,CLT-080,Northstar Construction BI Dashboard Implementation,SL-01,BR-008,CON-078,Fixed Fee,2025-02-24,2025-04-20,2025-06-09,,,Completed,238000,2184.7,138220.33,Low
+PRJ-0259,CLT-031,Birch Retail Data Quality Remediation,SL-06,BR-005,CON-059,Fixed Fee,2025-01-03,2025-08-21,,,,In Progress,140050,1492.7,95101.46,Low
+PRJ-0260,CLT-009,Brightpath Energy Workforce Change Program,SL-06,BR-004,CON-059,Fixed Fee,2025-07-04,2025-10-02,2025-11-21,,,,234590,2430.1,154824.69,Medium

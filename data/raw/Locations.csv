@@ -1,0 +1,9 @@
+Branch_ID,City,Province,Region,Office_Open_Date,Branch_Manager
+BR-001,Toronto,ON,Ontario,2017-04-03,Nadia Spencer
+BR-002,Ottawa,ON,Ontario,2019-09-09,Ethan Wright
+BR-003,Vancouver,BC,Western Canada,2018-06-11,Priya Nair
+BR-004,Calgary,AB,Prairies,2020-02-18,Lucas Chen
+BR-005,Edmonton,AB,Prairies,2021-05-17,Amina Bello
+BR-006,Montreal,QC,Quebec,2018-10-01,Gabriel Tremblay
+BR-007,Halifax,NS,Atlantic Canada,2021-08-16,Maya Thompson
+BR-008,Winnipeg,MB,Prairies,2022-01-10,Noah Martin
