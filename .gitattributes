@@ -1,0 +1,9 @@
+# Explicitly detect all .sql files as regular SQL programming code
+*.sql linguist-language=SQL
+*.sql linguist-detectable=true
+models/**/*.sql linguist-detectable=true
+
+# Ignore generated documentation, target builds, or TMDL/metadata files from language metrics
+target/** linguist-vendored
+dbt_packages/** linguist-vendored
+*.json linguist-vendored
