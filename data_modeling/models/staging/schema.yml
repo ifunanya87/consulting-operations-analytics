@@ -16,7 +16,7 @@ models:
       - name: City
         description: "Canadian city."
       - name: Province
-        description: "Canadian province code. Standardized using ProvinceMap if raw values differ."
+        description: "Standardized Canadian province code."
       - name: Region
         description: "Canadian business region used for reporting."
       - name: Client_Size
@@ -46,7 +46,7 @@ models:
         description: "Currency used for commercial records."
 
   - name: stg_consultants
-    description: "Staging model for consultant profiles and rates."
+    description: "Cleans consultant profile records, standardizes hire and termination dates, and backfills missing hourly cost and billing rates using default rates from seniority rate rules."
     columns:
       - name: Consultant_ID
         description: "Unique consultant identifier."
@@ -56,24 +56,24 @@ models:
       - name: Consultant_Name
         description: "Consultant full name."
       - name: Home_Branch_ID
-        description: "Consultant's home office branch."
+        description: "Consultant's home office branch identifier."
       - name: Service_Line_ID
         description: "Unique service line identifier."
       - name: Seniority
         description: "Consultant seniority level."
       - name: Hourly_Cost_Rate
-        description: "Internal hourly delivery cost in CAD."
+        description: "Internal hourly delivery cost in CAD, coalesced with default rates if missing."
       - name: Standard_Bill_Rate
-        description: "Default client billing rate in CAD."
+        description: "Default client billing rate in CAD, coalesced with default rates if missing."
       - name: Hire_Date
-        description: "Consultant hire date."
+        description: "Consultant hire date cast to standard DATE format."
       - name: Termination_Date
-        description: "Termination date if inactive; blank if active."
+        description: "Termination date cast to DATE format; null if active."
       - name: Employment_Status
         description: "Active or inactive employment status."
 
   - name: stg_clientfeedback
-    description: "Staging model for project satisfaction scores."
+    description: "Cleans raw client feedback entries, standardizes key identifiers and dates, recalculates missing overall satisfaction scores from component averages, and derives client recommendation indicators."
     columns:
       - name: Feedback_ID
         description: "Unique feedback record identifier."
@@ -81,182 +81,198 @@ models:
           - unique
           - not_null
       - name: Project_ID
-        description: "Unique project identifier."
+        description: "Standardized uppercase project identifier."
+        data_tests:
+          - not_null
       - name: Feedback_Date
         description: "Date client feedback was received."
       - name: Delivery_Quality_Score
-        description: "Client score from 1 to 5 for delivery quality."
+        description: "Client rating from 1 to 5 for delivery quality."
       - name: Communication_Score
-        description: "Client score from 1 to 5 for communication."
+        description: "Client rating from 1 to 5 for communication."
       - name: Value_For_Money_Score
-        description: "Client score from 1 to 5 for value."
+        description: "Client rating from 1 to 5 for overall value."
       - name: Overall_Satisfaction_Score
-        description: "Overall average satisfaction score."
+        description: "Overall satisfaction score; calculated as the average of component scores if null."
       - name: Would_Recommend
-        description: "Client recommendation response."
+        description: "Derived recommendation classification: Yes (>= 4.0), Maybe (>= 3.5), or No."
+        data_tests:
+          - accepted_values:
+              values: ['Yes', 'Maybe', 'No']
 
   - name: stg_projects
-    description: "Staging model for consulting project details and budgets."
+    description: "Cleans consulting project records, standardizes primary/foreign keys and project metadata, casts lifecycle dates, and derives missing project statuses based on completion and cancellation dates."
     columns:
       - name: Project_ID
-        description: "Unique project identifier."
+        description: "Unique uppercase project identifier."
         data_tests:
           - unique
           - not_null
       - name: Client_ID
-        description: "Unique client identifier."
+        description: "Unique uppercase client identifier."
+        data_tests:
+          - not_null
       - name: Service_Line_ID
-        description: "Unique service line identifier."
+        description: "Unique uppercase service line identifier."
       - name: Branch_ID
-        description: "Unique ExpertEdge branch identifier."
+        description: "Unique uppercase office branch identifier."
       - name: Project_Manager_ID
         description: "Consultant managing project delivery."
       - name: Project_Name
-        description: "Project title."
+        description: "Trimmed project name."
       - name: Project_Type
-        description: "Commercial engagement type."
+        description: "Commercial engagement structure type."
       - name: Start_Date
         description: "Project start date."
       - name: Planned_End_Date
         description: "Expected project completion date."
       - name: Actual_End_Date
-        description: "Actual completion date; present only for completed projects."
+        description: "Actual completion date; present for completed projects."
       - name: Cancellation_Date
-        description: "Date project was cancelled; present only for cancelled projects."
+        description: "Cancellation date; present for cancelled projects."
       - name: Cancellation_Reason
-        description: "Reason for cancellation."
+        description: "Nullified and trimmed cancellation reason."
       - name: Project_Status
-        description: "Completed, In Progress, or Cancelled. Missing raw values can be inferred from lifecycle dates."
+        description: "Derived project status: Completed, Cancelled, or In Progress."
+        data_tests:
+          - accepted_values:
+              values: ['Completed', 'Cancelled', 'In Progress']
       - name: Contract_Value_CAD
-        description: "Signed contract value before tax."
+        description: "Signed contract value in CAD before tax."
       - name: Budgeted_Hours
-        description: "Estimated delivery hours at project approval."
+        description: "Approved project budget hours."
       - name: Budgeted_Cost_CAD
-        description: "Estimated labour cost at project approval."
+        description: "Approved labour cost budget in CAD."
       - name: Initial_Risk_Level
-        description: "Delivery risk rating at project start."
+        description: "Delivery risk assessment at project kickoff."
 
   - name: stg_payments
-    description: "Staging model for invoice payment records."
+    description: "Cleans client payment records, standardizes payment and invoice primary/foreign keys, casts transaction dates, parses currency strings into numeric decimals, and trims payment metadata."
     columns:
       - name: Payment_ID
-        description: "Unique payment identifier."
+        description: "Unique uppercase payment identifier."
         data_tests:
           - unique
           - not_null
       - name: Invoice_ID
-        description: "Unique invoice identifier."
+        description: "Uppercase invoice identifier linking to the billed invoice."
+        data_tests:
+          - not_null
       - name: Payment_Date
-        description: "Date payment was received."
+        description: "Date payment was processed."
       - name: Payment_Amount_CAD
-        description: "Amount paid by the client."
+        description: "Numeric payment amount in CAD stripped of currency symbols."
       - name: Payment_Method
-        description: "Payment channel."
+        description: "Trimmed payment channel indicator."
       - name: Payment_Status
-        description: "Payment processing status."
+        description: "Processing status of the payment (e.g., Cleared)."
 
   - name: stg_taxrates
-    description: "Staging model for provincial tax rate mappings."
+    description: "Cleans provincial tax rate reference data, standardizes provincial codes, trims province and tax names, and casts tax rates into standard decimal values."
     columns:
       - name: Province
-        description: "Canadian province code. Standardized using ProvinceMap if raw values differ."
+        description: "Standardized uppercase 2-letter Canadian province code."
         data_tests:
           - unique
           - not_null
       - name: Province_Name
-        description: "Province Name field."
+        description: "Trimmed full provincial name."
       - name: Tax_Name
-        description: "Tax Name field."
+        description: "Trimmed provincial tax designation (e.g., HST, GST/PST)."
       - name: Tax_Rate
-        description: "Province-level tax rate."
+        description: "Decimal representation of the provincial tax rate."
 
   - name: stg_invoices
-    description: "Staging model for billing invoices, calculated taxes, and payment status."
+    description: "Cleans invoice financial figures, standardizes primary and foreign keys, backfills missing provincial tax rates and amounts via client locations, and dynamically derives invoice payment statuses using cleared payment totals."
     columns:
       - name: Invoice_ID
-        description: "Unique invoice identifier."
+        description: "Unique uppercase invoice identifier."
         data_tests:
           - unique
           - not_null
       - name: Project_ID
-        description: "Unique project identifier."
+        description: "Uppercase project identifier."
       - name: Client_ID
-        description: "Unique client identifier."
+        description: "Uppercase client identifier."
       - name: Invoice_Date
         description: "Date invoice was issued."
       - name: Due_Date
         description: "Payment due date."
       - name: Invoice_Subtotal_CAD
-        description: "Invoice amount before tax."
+        description: "Numeric invoice subtotal before taxes in CAD."
       - name: Tax_Rate
-        description: "Province-level tax rate."
+        description: "Provincial tax rate applied; defaulted via client lookup if missing in source."
       - name: Tax_Amount_CAD
-        description: "Tax amount charged on the invoice."
+        description: "Tax amount in CAD; computed using lookup tax rate if missing in source."
       - name: Total_Invoice_Amount_CAD
-        description: "Invoice subtotal plus tax."
+        description: "Total invoice amount including tax in CAD."
+      - name: Total_Amount_Paid
+        description: "Sum of cleared payment amounts received against this invoice."
       - name: Invoice_Status
-        description: "Payment status of invoice as of 2025-12-31."
+        description: "Derived status: Paid, Partially Paid - Overdue, Partially Paid, Overdue, or Open."
+        data_tests:
+          - accepted_values:
+              values: ['Paid', 'Partially Paid - Overdue', 'Partially Paid', 'Overdue', 'Open']
 
   - name: stg_taskcategoryrules
-    description: "Staging lookup table for task categories and default billable rules."
+    description: "Cleans task category lookup rules, standardizing task category descriptions and trimming flags for default billability and utilization tracking."
     columns:
       - name: Task_Category
-        description: "Type of work recorded on the timesheet."
+        description: "Standardized task category name."
         data_tests:
           - unique
           - not_null
       - name: Default_Billable_Flag
-        description: "Default Billable Flag field."
+        description: "Default billability classification: Billable or Non-Billable."
       - name: Include_In_Utilization
-        description: "Include In Utilization field."
+        description: "Flag indicating whether category hours count towards consultant utilization metrics."
 
   - name: stg_timesheets
-    description: "Staging model for recorded consultant work hours."
+    description: "Cleans timesheet entries, standardizes key identifiers and dates, casts logged hours to decimals, backfills missing billable flags using task category lookup rules, and deduplicates the final staging output."
     columns:
       - name: Timesheet_ID
-        description: "Unique timesheet entry identifier."
+        description: "Uppercase timesheet record identifier."
         data_tests:
-          - unique
           - not_null
       - name: Work_Date
-        description: "Timesheet period start date."
+        description: "Date work was performed."
       - name: Project_ID
-        description: "Unique project identifier."
+        description: "Uppercase project identifier."
       - name: Consultant_ID
-        description: "Unique consultant identifier."
+        description: "Uppercase consultant identifier."
       - name: Task_Category
-        description: "Type of work recorded on the timesheet."
+        description: "Trimmed task category description."
       - name: Hours_Worked
-        description: "Hours recorded for the period."
+        description: "Logged work duration cast to DECIMAL(5,1)."
       - name: Billable_Flag
-        description: "Billable or Non-Billable classification."
+        description: "Billable status; backfilled using default task category rules if missing."
       - name: Approved_Flag
-        description: "Whether the timesheet entry was approved."
+        description: "Approval status of the timesheet entry."
 
   - name: stg_servicelines
-    description: "Staging model for service practice areas and target margins."
+    description: "Cleans service line reference data, standardizes service line identifiers, trims textual names and departments, and formats target margins, standard bill rates, and utilization percentages into standard decimal values."
     columns:
       - name: Service_Line_ID
-        description: "Unique service line identifier."
+        description: "Unique uppercase service line identifier."
         data_tests:
           - unique
           - not_null
       - name: Service_Line
-        description: "Service Line field."
+        description: "Trimmed practice area name."
       - name: Department
-        description: "Department field."
+        description: "Trimmed parent department name."
       - name: Target_Margin_Pct
-        description: "Target Margin Pct field."
+        description: "Target profit margin formatted as DECIMAL(4,2)."
       - name: Standard_Bill_Rate
-        description: "Default client billing rate in CAD."
+        description: "Default hourly billing rate in CAD formatted as DECIMAL(10,2)."
       - name: Target_Utilization_Pct
-        description: "Target Utilization Pct field."
+        description: "Target utilization rate formatted as DECIMAL(4,2)."
 
   - name: stg_seniorityraterules
-    description: "Staging lookup table for default rates by seniority level."
+    description: "Cleans seniority rate lookup rules, standardizes service line identifiers and seniority titles, and formats default hourly cost and bill rates into standard decimal values."
     columns:
       - name: Service_Line_ID
-        description: "Unique service line identifier."
+        description: "Uppercase service line identifier."
         data_tests:
           - not_null
       - name: Seniority
@@ -264,77 +280,78 @@ models:
         data_tests:
           - not_null
       - name: Default_Hourly_Cost_Rate
-        description: "Default Hourly Cost Rate field."
+        description: "Default hourly cost rate in CAD."
       - name: Default_Bill_Rate
-        description: "Default Bill Rate field."
+        description: "Default hourly bill rate in CAD."
 
   - name: stg_senioritylevels
-    description: "Staging lookup table for seniority multipliers and expected capacity."
+    description: "Cleans seniority level reference data, standardizes seniority text fields, formats cost and billing rate multipliers, and casts expected annual available hours to integers."
     columns:
       - name: Seniority
-        description: "Consultant seniority level."
+        description: "Trimmed seniority level name."
         data_tests:
           - unique
           - not_null
       - name: Cost_Multiplier
-        description: "Cost Multiplier field."
+        description: "Cost multiplier for seniority tier."
       - name: Bill_Rate_Multiplier
-        description: "Bill Rate Multiplier field."
+        description: "Bill rate multiplier for seniority tier."
       - name: Expected_Annual_Available_Hours
-        description: "Expected Annual Available Hours field."
+        description: "Target available working hours per year cast as INTEGER."
 
   - name: stg_provincemap
-    description: "Staging lookup model mapping raw province variations to standard codes."
+    description: "Normalizes raw provincial names and variations to full province labels and standardizes target provincial ISO codes."
     columns:
       - name: Raw_Province_Value
-        description: "Raw Province Value field."
+        description: "Standardized province name mapped from raw variations."
         data_tests:
-          - unique
           - not_null
       - name: Standard_Province
-        description: "Standard Province field."
+        description: "Uppercase 2-letter Canadian province code."
+        data_tests:
+          - not_null
 
   - name: stg_projectassignments
-    description: "Staging model linking consultants to specific project engagements."
+    description: "Cleans consultant project allocation records, standardizes assignment, project, and consultant identifiers, casts lifecycle assignment dates, parses decimal allocations and billing rates, and normalizes assignment statuses."
     columns:
       - name: Assignment_ID
-        description: "Unique project assignment identifier."
+        description: "Unique uppercase assignment identifier."
         data_tests:
           - unique
           - not_null
       - name: Project_ID
-        description: "Unique project identifier."
+        description: "Uppercase project identifier."
       - name: Consultant_ID
-        description: "Unique consultant identifier."
+        description: "Uppercase consultant identifier."
       - name: Role_On_Project
-        description: "Role assigned to the consultant on a project."
+        description: "Role title of consultant on project."
       - name: Assigned_Start_Date
-        description: "Start date of consultant assignment."
+        description: "Start date of the project assignment."
       - name: Assigned_End_Date
-        description: "End date of consultant assignment."
+        description: "End date of the project assignment."
       - name: Allocation_Pct
-        description: "Planned allocation percentage."
+        description: "Planned staff allocation percentage."
       - name: Bill_Rate_CAD
-        description: "Bill rate used for this assignment."
+        description: "Hourly billing rate in CAD assigned for the engagement."
       - name: Assignment_Status
-        description: "Active or closed assignment."
+        description: "Normalized lowercase assignment status (e.g., active, closed)."
 
   - name: stg_locations
-    description: "Staging model for office branch locations and regions."
+    description: "Cleans office branch records, standardizes branch identifiers and provincial codes, formats geographic and manager text fields, and casts office open dates to standard date format."
     columns:
       - name: Branch_ID
-        description: "Unique ExpertEdge branch identifier."
+        description: "Unique uppercase office branch identifier."
         data_tests:
           - unique
           - not_null
       - name: City
-        description: "Canadian city."
+        description: "Trimmed city name."
       - name: Province
-        description: "Canadian province code. Standardized using ProvinceMap if raw values differ."
+        description: "Standardized uppercase 2-letter Canadian province code."
       - name: Region
-        description: "Canadian business region used for reporting."
+        description: "Trimmed geographic reporting region."
       - name: Office_Open_Date
-        description: "Office Open Date field."
+        description: "Date the office branch was established."
       - name: Branch_Manager
-        description: "Branch Manager field."
+        description: "Trimmed name of the branch manager."
         

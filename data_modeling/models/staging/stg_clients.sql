@@ -1,6 +1,6 @@
 /*
   Model: stg_clients
-  Layer: Bronze / Staging
+  Layer: Staging
   Description: Cleans, standardizes, and type-casts raw client data.
 */
 
@@ -27,6 +27,6 @@ select
     Region,
     Client_Size,
     Account_Manager_ID,
-    try_cast(nullif(trim(Client_Start_Date), '') as date) as Client_Start_Date,
+    try_cast(nullif(trim(cast(Client_Start_Date as varchar)), '') as date) as Client_Start_Date,
     Active_Status 
 from source

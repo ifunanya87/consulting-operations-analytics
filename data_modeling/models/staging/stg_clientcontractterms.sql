@@ -1,6 +1,6 @@
 /*
   Model: stg_clientcontractterms
-  Layer: Bronze / Staging
+  Layer: Staging
   Description: Raw passthrough for client contract terms data.
 */
 

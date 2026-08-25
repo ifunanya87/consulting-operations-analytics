@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: raw_data
     meta:
-      external_location: "data/raw/{name}.csv"
+      external_location: "../data/raw/{name}.csv"
     tables:
       - name: Clients
       - name: ClientContractTerms
