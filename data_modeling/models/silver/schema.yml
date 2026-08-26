@@ -1,0 +1,291 @@
+version: 2
+
+models:
+  - name: silver_clients
+    description: "Enriched client dimension combining core client profile data with commercial contract payment terms."
+    columns:
+      - name: Client_ID
+        description: "Unique uppercase client identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Client_Name
+        description: "Client organization name."
+        data_tests:
+          - not_null
+      - name: Industry
+        description: "Client's industry sector."
+      - name: City
+        description: "Canadian city."
+      - name: Province
+        description: "Standardized Canadian province code."
+      - name: Region
+        description: "Canadian business region used for reporting."
+      - name: Client_Size
+        description: "Client size category (Small, Mid-Market, Enterprise)."
+      - name: Account_Manager_ID
+        description: "Consultant responsible for the client relationship."
+      - name: Client_Start_Date
+        description: "Date the client relationship began."
+      - name: Active_Status
+        description: "Current client active/inactive status."
+      - name: Payment_Terms_Days
+        description: "Standard net payment terms in days."
+      - name: Preferred_Invoice_Frequency
+        description: "Typical billing frequency agreed with client."
+      - name: Client_Priority
+        description: "Client segment assigned by account team."
+      - name: Default_Currency
+        description: "Currency used for commercial records."
+
+  - name: silver_locations
+    description: "Branch office locations mapped to standardized provinces and provincial tax rates."
+    columns:
+      - name: Branch_ID
+        description: "Unique uppercase office branch identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: City
+        description: "Trimmed city name."
+      - name: Province
+        description: "Standardized uppercase 2-letter Canadian province code."
+      - name: Region
+        description: "Trimmed geographic reporting region."
+      - name: Office_Open_Date
+        description: "Date the office branch was established."
+      - name: Branch_Manager
+        description: "Trimmed name of the branch manager."
+      - name: Tax_Name
+        description: "Trimmed provincial tax designation (e.g., HST, GST/PST)."
+      - name: Tax_Rate
+        description: "Decimal representation of the provincial tax rate."
+
+  - name: silver_consultants
+    description: "Consultant profiles enriched with seniority capacity multipliers and rate rule defaults."
+    columns:
+      - name: Consultant_ID
+        description: "Unique consultant identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Consultant_Name
+        description: "Consultant full name."
+      - name: Home_Branch_ID
+        description: "Consultant's home office branch identifier."
+      - name: Service_Line_ID
+        description: "Unique service line identifier."
+      - name: Seniority
+        description: "Consultant seniority level."
+      - name: Hire_Date
+        description: "Consultant hire date."
+      - name: Termination_Date
+        description: "Termination date; null if active."
+      - name: Employment_Status
+        description: "Active or inactive employment status."
+      - name: Hourly_Cost_Rate
+        description: "Consultant internal hourly delivery cost in CAD."
+      - name: Standard_Bill_Rate
+        description: "Consultant default client billing rate in CAD."
+      - name: Cost_Multiplier
+        description: "Cost multiplier for seniority tier."
+      - name: Bill_Rate_Multiplier
+        description: "Bill rate multiplier for seniority tier."
+      - name: Expected_Annual_Available_Hours
+        description: "Target available working hours per year."
+      - name: Rule_Default_Cost_Rate
+        description: "Fallback default hourly cost rate from seniority rules."
+      - name: Rule_Default_Bill_Rate
+        description: "Fallback default hourly bill rate from seniority rules."
+
+  - name: silver_servicelines
+    description: "Practice area service lines with target gross margin and target utilization benchmarks."
+    columns:
+      - name: Service_Line_ID
+        description: "Unique uppercase service line identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Service_Line
+        description: "Trimmed practice area name."
+      - name: Department
+        description: "Trimmed parent department name."
+      - name: Target_Margin_Pct
+        description: "Target profit margin formatted as decimal."
+      - name: Standard_Bill_Rate
+        description: "Default hourly billing rate in CAD."
+      - name: Target_Utilization_Pct
+        description: "Target utilization rate formatted as decimal."
+
+  - name: silver_projects
+    description: "Project metadata including baseline schedules, budgets, and pre-calculated delay days."
+    columns:
+      - name: Project_ID
+        description: "Unique uppercase project identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Project_Name
+        description: "Trimmed project name."
+      - name: Client_ID
+        description: "Unique uppercase client identifier."
+      - name: Service_Line_ID
+        description: "Unique uppercase service line identifier."
+      - name: Project_Manager_ID
+        description: "Consultant managing project delivery."
+      - name: Project_Type
+        description: "Commercial engagement structure type."
+      - name: Contract_Value_CAD
+        description: "Signed contract value in CAD before tax."
+      - name: Budgeted_Cost_CAD
+        description: "Approved project budget limit in CAD."
+      - name: Start_Date
+        description: "Project actual or expected start date."
+      - name: Baseline_End_Date
+        description: "Expected baseline project completion date."
+      - name: Actual_End_Date
+        description: "Actual completion date; present for completed projects."
+      - name: Project_Status
+        description: "Derived project status (Completed, Cancelled, In Progress)."
+        data_tests:
+          - accepted_values:
+              values: ['Completed', 'Cancelled', 'In Progress']
+      - name: Schedule_Delay_Days
+        description: "Pre-calculated variance in days between actual end date and baseline end date."
+
+  - name: silver_timesheets
+    description: "Daily timesheet labor logs enriched with task category utilization flags."
+    columns:
+      - name: Timesheet_ID
+        description: "Uppercase timesheet record identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Work_Date
+        description: "Date work was performed."
+      - name: Project_ID
+        description: "Uppercase project identifier."
+      - name: Consultant_ID
+        description: "Uppercase consultant identifier."
+      - name: Task_Category
+        description: "Trimmed task category description."
+      - name: Hours_Worked
+        description: "Logged work duration."
+      - name: Billable_Flag
+        description: "Billable status (Billable or Non-Billable)."
+      - name: Approved_Flag
+        description: "Approval status of the timesheet entry."
+      - name: Include_In_Utilization
+        description: "Flag indicating whether hours count toward consultant utilization metrics."
+
+  - name: silver_invoices
+    description: "Invoices enriched with pre-calculated outstanding balances, days past due, and aging buckets."
+    columns:
+      - name: Invoice_ID
+        description: "Unique uppercase invoice identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Project_ID
+        description: "Uppercase project identifier."
+      - name: Client_ID
+        description: "Uppercase client identifier."
+      - name: Invoice_Date
+        description: "Date invoice was issued."
+      - name: Due_Date
+        description: "Payment due date."
+      - name: Invoice_Subtotal_CAD
+        description: "Invoice subtotal before taxes in CAD."
+      - name: Tax_Rate
+        description: "Provincial tax rate applied."
+      - name: Tax_Amount_CAD
+        description: "Tax amount in CAD."
+      - name: Total_Invoice_Amount_CAD
+        description: "Total invoice amount including tax in CAD."
+      - name: Total_Amount_Paid
+        description: "Sum of cleared payment amounts received against this invoice."
+      - name: Invoice_Status
+        description: "Derived status (Paid, Partially Paid - Overdue, Partially Paid, Overdue, Open)."
+        data_tests:
+          - accepted_values:
+              values: ['Paid', 'Partially Paid - Overdue', 'Partially Paid', 'Overdue', 'Open']
+      - name: Outstanding_Balance
+        description: "Pre-calculated remaining unpaid invoice amount."
+      - name: Days_Past_Due
+        description: "Pre-calculated number of days overdue relative to snapshot date."
+      - name: Aging_Bucket
+        description: "Pre-categorized AR aging bracket based on days past due."
+
+  - name: silver_payments
+    description: "Historical payment collection transaction logs."
+    columns:
+      - name: Payment_ID
+        description: "Unique uppercase payment identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Invoice_ID
+        description: "Uppercase invoice identifier linking to the billed invoice."
+        data_tests:
+          - not_null
+      - name: Payment_Date
+        description: "Date payment was processed."
+      - name: Payment_Amount_CAD
+        description: "Numeric payment amount in CAD."
+      - name: Payment_Method
+        description: "Trimmed payment channel indicator."
+      - name: Payment_Status
+        description: "Processing status of the payment (e.g., Cleared)."
+
+  - name: silver_projectassignments
+    description: "Consultant project staffing assignments and allocation durations."
+    columns:
+      - name: Assignment_ID
+        description: "Unique uppercase assignment identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Project_ID
+        description: "Uppercase project identifier."
+      - name: Consultant_ID
+        description: "Uppercase consultant identifier."
+      - name: Role_On_Project
+        description: "Role title of consultant on project."
+      - name: Assigned_Start_Date
+        description: "Start date of the project assignment."
+      - name: Assigned_End_Date
+        description: "End date of the project assignment."
+      - name: Allocation_Pct
+        description: "Planned staff allocation percentage/hours."
+      - name: Bill_Rate_CAD
+        description: "Agreed hourly billing rate in CAD for assignment."
+      - name: Assignment_Status
+        description: "Status of assignment (e.g., Active, Completed)."
+      - name: Assigned_Days
+        description: "Total number of calendar days assigned to the project."
+
+  - name: silver_clientfeedback
+    description: "Post-project client survey feedback ratings and recommendation scores."
+    columns:
+      - name: Feedback_ID
+        description: "Unique feedback record identifier."
+        data_tests:
+          - unique
+          - not_null
+      - name: Project_ID
+        description: "Standardized uppercase project identifier."
+        data_tests:
+          - not_null
+      - name: Feedback_Date
+        description: "Date client feedback was received."
+      - name: Overall_Satisfaction_Score
+        description: "Overall satisfaction rating from 1 to 5."
+      - name: Delivery_Quality_Score
+        description: "Client rating for delivery quality."
+      - name: Communication_Score
+        description: "Client rating for communication."
+      - name: Value_For_Money_Score
+        description: "Client rating for value relative to cost."
+      - name: Would_Recommend
+        description: "Recommendation likelihood flag or score."
+        

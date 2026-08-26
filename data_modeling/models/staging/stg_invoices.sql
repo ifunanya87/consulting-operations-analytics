@@ -56,11 +56,11 @@ select
     coalesce(p.Total_Invoice_Amount_CAD, cast(p.Invoice_Subtotal_CAD + coalesce(p.Tax_Amount_CAD, p.Invoice_Subtotal_CAD * tl.lookup_tax_rate) as decimal(10,2))) as Total_Invoice_Amount_CAD,
     coalesce(s.total_paid, 0.00) as Total_Amount_Paid,
     case 
-        when coalesce(s.total_paid, 0.00) >= p.Total_Invoice_Amount_CAD then 'Paid'
-        when coalesce(s.total_paid, 0.00) > 0.00 and p.Due_Date < '2025-12-31' then 'Partially Paid - Overdue'
-        when coalesce(s.total_paid, 0.00) > 0.00 then 'Partially Paid'
-        when coalesce(s.total_paid, 0.00) = 0.00 and p.Due_Date < '2025-12-31' then 'Overdue'
-        else 'Open'
+    when coalesce(s.total_paid, 0.00) >= coalesce(p.Total_Invoice_Amount_CAD, p.Invoice_Subtotal_CAD + coalesce(p.Tax_Amount_CAD, p.Invoice_Subtotal_CAD * tl.lookup_tax_rate)) then 'Paid'
+    when coalesce(s.total_paid, 0.00) > 0.00 and p.Due_Date < cast('{{ var("snapshot_date") }}' as date) then 'Partially Paid - Overdue'
+    when coalesce(s.total_paid, 0.00) > 0.00 then 'Partially Paid'
+    when coalesce(s.total_paid, 0.00) = 0.00 and p.Due_Date < cast('{{ var("snapshot_date") }}' as date) then 'Overdue'
+    else 'Open'
     end as Invoice_Status
 from prepared p
 left join sums s on p.Invoice_ID = s.Invoice_ID
