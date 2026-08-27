@@ -18,6 +18,10 @@ dbt_packages/
 dbt_modules/
 logs/
 
+# dbt extention Artifacts
+*.user.yml
+
+
 # DuckDB Database Files
 *.duckdb
 *.duckdb.wal

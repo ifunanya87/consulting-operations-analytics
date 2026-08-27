@@ -11,9 +11,8 @@
         "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
       },
       "extensions": [
-        "binnacle.vscode-dbt-power-user",   // dbt support & DAG visualizer
-        "alex-monahan.vscode-duckdb",       // DuckDB GUI visualizer
-        "charliermarsh.ruff"               // Python linter/formatter
+        "innoverio.vscode-dbt-power-user",
+        "chuckjonas.duckdb"
       ]
     }
   },
