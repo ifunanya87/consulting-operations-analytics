@@ -1,17 +1,33 @@
-# Force GitHub to detect all Python scripts anywhere in the repository hierarchy
+# PYTHON 
 *.py linguist-language=Python
 *.py linguist-detectable=true
+*.py linguist-vendored=false
+*.py linguist-documentation=false
+
+**/*.py linguist-language=Python
 **/*.py linguist-detectable=true
+**/*.py linguist-vendored=false
+**/*.py linguist-documentation=false
+
 data_storytelling/**/*.py linguist-language=Python
 data_storytelling/**/*.py linguist-detectable=true
 
-# Force GitHub to detect ALL .sql files anywhere in the repo hierarchy
+# SQL 
 *.sql linguist-language=SQL
 *.sql linguist-detectable=true
+**/*.sql linguist-language=SQL
 **/*.sql linguist-detectable=true
+
+data_modeling/**/*.sql linguist-language=SQL
 data_modeling/**/*.sql linguist-detectable=true
 
-# Ignore generated dbt artifacts, packages, and raw data from byte counts
+# Vendor auto-generated dbt targets, compiled SQL, and seed schemas
+**/target/**/*.sql linguist-vendored
+**/dbt_packages/**/*.sql linguist-vendored
+data_modeling/target/**/*.sql linguist-vendored
+data_modeling/dbt_packages/**/*.sql linguist-vendored
+
+# OTHER ARTIFACTS & DATA BINARIES
 target/** linguist-vendored
 dbt_packages/** linguist-vendored
 *.csv linguist-vendored
@@ -19,3 +35,4 @@ dbt_packages/** linguist-vendored
 *.parquet linguist-vendored
 *.duckdb linguist-vendored
 *.duckdb.wal linguist-vendored
+*.md linguist-documentation
