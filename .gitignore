@@ -38,3 +38,6 @@ logs/
 # Un-ignore everything inside the .devcontainer folder
 !.devcontainer/
 !.devcontainer/*.json
+
+# data models
+data/gold_layer/

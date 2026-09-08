@@ -14,6 +14,8 @@ select
     Project_ID,
     Project_Name,
     Client_ID,
+    Service_Line_ID,
+    Branch_ID,
     Project_Manager_ID,
     Contract_Value_CAD,
     Budgeted_Cost_CAD,
@@ -27,5 +29,7 @@ select
         when Actual_End_Date is not null and Planned_End_Date is not null
         then datediff('day', Planned_End_Date, Actual_End_Date)
         else null 
-    end as Schedule_Delay_Days
+    end as Schedule_Delay_Days,
+    Initial_Risk_Level,
+    Project_Type
 from projects
