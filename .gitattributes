@@ -2,8 +2,8 @@
 *.py linguist-language=Python
 *.py linguist-detectable=true
 **/*.py linguist-detectable=true
-data_story_telling/**/*.py linguist-language=Python
-data_story_telling/**/*.py linguist-detectable=true
+data_storytelling/**/*.py linguist-language=Python
+data_storytelling/**/*.py linguist-detectable=true
 
 # Force GitHub to detect ALL .sql files anywhere in the repo hierarchy
 *.sql linguist-language=SQL
