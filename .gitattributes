@@ -1,3 +1,10 @@
+# Force GitHub to detect all Python scripts anywhere in the repository hierarchy
+*.py linguist-language=Python
+*.py linguist-detectable=true
+**/*.py linguist-detectable=true
+data_story_telling/**/*.py linguist-language=Python
+data_story_telling/**/*.py linguist-detectable=true
+
 # Force GitHub to detect ALL .sql files anywhere in the repo hierarchy
 *.sql linguist-language=SQL
 *.sql linguist-detectable=true
@@ -10,3 +17,5 @@ dbt_packages/** linguist-vendored
 *.csv linguist-vendored
 *.json linguist-vendored
 *.parquet linguist-vendored
+*.duckdb linguist-vendored
+*.duckdb.wal linguist-vendored
