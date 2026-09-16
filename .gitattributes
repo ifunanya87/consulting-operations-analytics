@@ -1,35 +1,33 @@
 # PYTHON 
 *.py linguist-language=Python
 *.py linguist-detectable=true
-*.py linguist-vendored=false
-*.py linguist-documentation=false
-
 **/*.py linguist-language=Python
 **/*.py linguist-detectable=true
-**/*.py linguist-vendored=false
-**/*.py linguist-documentation=false
-
 data_storytelling/**/*.py linguist-language=Python
 data_storytelling/**/*.py linguist-detectable=true
 
-# SQL 
+# DOCKER & DEVCONTAINER
+.devcontainer/Dockerfile linguist-language=Dockerfile
+.devcontainer/Dockerfile linguist-detectable=true
+.devcontainer/Dockerfile linguist-vendored=false
+.devcontainer/Dockerfile linguist-documentation=false
+
+Dockerfile linguist-language=Dockerfile
+Dockerfile linguist-detectable=true
+
+# SQL MODELS GENERATED ARTIFACTS
 *.sql linguist-language=SQL
 *.sql linguist-detectable=true
-**/*.sql linguist-language=SQL
-**/*.sql linguist-detectable=true
-
 data_modeling/**/*.sql linguist-language=SQL
 data_modeling/**/*.sql linguist-detectable=true
 
-# Vendor auto-generated dbt targets, compiled SQL, and seed schemas
-**/target/**/*.sql linguist-vendored
-**/dbt_packages/**/*.sql linguist-vendored
-data_modeling/target/**/*.sql linguist-vendored
-data_modeling/dbt_packages/**/*.sql linguist-vendored
+data_modeling/target/** linguist-vendored
+data_modeling/dbt_packages/** linguist-vendored
+data_modeling/logs/** linguist-vendored
+**/target/** linguist-vendored
+**/dbt_packages/** linguist-vendored
 
-# OTHER ARTIFACTS & DATA BINARIES
-target/** linguist-vendored
-dbt_packages/** linguist-vendored
+# DATA, BINARY, AND DOCUMENTATION 
 *.csv linguist-vendored
 *.json linguist-vendored
 *.parquet linguist-vendored
