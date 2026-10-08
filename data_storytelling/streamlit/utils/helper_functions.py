@@ -52,7 +52,7 @@ def calculate_delay_multiplier(projects_df, invoices_df, default_multiplier=0.5)
   ) * 100.0
   reg_data["Log_Invoice"] = np.log1p(reg_data["Invoice_Subtotal_CAD"])
 
-  # Rescale hours to thousands to improve matrix condition number
+  # Rescale hours to thousands
   reg_data["hours_k"] = reg_data["Total_Hours_Worked"] / 1000.0
 
   # Fit Multiple Linear Regression
@@ -76,9 +76,8 @@ def calculate_delay_multiplier(projects_df, invoices_df, default_multiplier=0.5)
 
 
 def calculate_rf_feature_importance(projects_df, invoices_df):
-  """Trains a Random Forest Regressor to measure relative feature importance
-
-  for Margin Loss. Scale invariant, but protected against NaN/Inf values.
+  """Trains a Random Forest Regressor to measure relative feature importance for Margin Loss.
+  Note: Safe from missing (NaN) and infinite (Inf) values.
   """
   try:
     # Aggregate invoice subtotals

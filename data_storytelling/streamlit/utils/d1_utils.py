@@ -13,7 +13,6 @@ DB_PATH = (
 @st.cache_data
 def load_d1_tables_from_duckdb(db_path=DB_PATH):
   """Fetches raw tables independently from DuckDB and performs lightweight,
-
   in-memory dimension lookups using Pandas.
   """
   conn = duckdb.connect(db_path, read_only=True)
@@ -50,7 +49,7 @@ def load_d1_tables_from_duckdb(db_path=DB_PATH):
       dc[["Client_ID", "Province", "Industry"]], on="Client_ID", how="left"
   )
   invoices_df = invoices_df.merge(
-      projects_df[["Project_ID", "Service_Line"]].drop_duplicates(),
+      projects_df[["Project_ID", "Service_Line", "Project_Status"]].drop_duplicates(),
       on="Project_ID",
       how="left",
   )
