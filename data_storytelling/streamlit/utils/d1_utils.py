@@ -10,7 +10,6 @@ DB_PATH = (
 )
 
 
-@st.cache_data
 def load_d1_tables_from_duckdb(db_path=DB_PATH):
   """Fetches raw tables independently from DuckDB and performs lightweight,
   in-memory dimension lookups using Pandas.

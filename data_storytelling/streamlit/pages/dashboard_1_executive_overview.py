@@ -17,7 +17,11 @@ st.markdown(
 )
 
 # Load Data
-projects_df, invoices_df = load_d1_tables_from_duckdb()
+@st.cache_data
+def get_cached_data():
+    return load_d1_tables_from_duckdb()
+
+projects_df, invoices_df = get_cached_data()
 
 # INTERACTIVE SIDEBAR SLICERS
 st.sidebar.header("Filter Options")

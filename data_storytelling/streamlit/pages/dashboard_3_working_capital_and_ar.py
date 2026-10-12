@@ -14,7 +14,11 @@ st.title("Working Capital, Accounts Receivable & Financing Drag")
 st.markdown("### Tracking capital cost exposure, aging receivables, and client credit risk.")
 
 # Load dataset
-fi_merged, dc, fpp = load_dashboard_3_data()
+@st.cache_data
+def get_cached_data():
+    return load_dashboard_3_data()
+
+fi_merged, dc, fpp = get_cached_data()
 
 # SIDEBAR FILTERS
 st.sidebar.header("Filter Options")
