@@ -11,7 +11,7 @@ from utils.d1_utils import (
 from utils.helper_functions import calculate_rf_feature_importance
 
 
-st.title("Dashboard 1: Executive Financial & Performance Overview")
+st.title("Executive Financial & Performance Overview")
 st.markdown(
     "### High-level revenue performance, gross margin leakage, and regional breakdown."
 )

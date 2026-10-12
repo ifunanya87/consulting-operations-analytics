@@ -13,7 +13,7 @@ from utils.d2_utils import (
 
 
 
-st.title("Dashboard 2: Operational Execution & Schedule Delay Analysis")
+st.title("Operational Execution & Schedule Delay Analysis")
 st.markdown("### Diagnostic tracking of delivery delays, customer satisfaction thresholds, and intake risk scores.")
 
 # LOAD DATA
